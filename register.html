@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="regstyle.css">
+	<style>
+	ul, ol {
+		list-style: none;
+		/* No bullets for the lists given*/ 
+		}
+		
+		@keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+.cube {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+        animation: rotate 4s linear infinite;
+    }
+	</style>
+	
+
+</head>
+<body>
+
+
+<nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+		<br/>
+			<li><a href="contact.html">Contact<a></li>
+        </ul>
+    </nav>
+	
+	
+    
+	
+
+    <div class="header">
+        <h1>Registration Form</h1>
+    </div>
+
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+
+    <footer align="right">
+        &copy; 2023 Fitilious Co.
+    </footer>
+
+</body>
+</html>

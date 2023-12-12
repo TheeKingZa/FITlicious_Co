@@ -1,0 +1,66 @@
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* black background */
+    text-align: center;
+}
+
+/* Style the header */
+header {
+    background-color: gold;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white; /* Black text color */
+    text-decoration: none;
+}
+
+a {
+	color: black;
+}
+
+/* Style the main content area */
+main {
+    background-color: black; /* White background */
+    padding: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: gold; /* Black background */
+    color: white; /* white text color */
+    padding: 10px;
+}
+
+/* Style the list items */
+ul, ol {
+    text-align: center; /* Change text alignment to left */
+}
+
+li {
+	display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Add padding to the footer links */
+footer a {
+    padding: 0 10px;
+}
+

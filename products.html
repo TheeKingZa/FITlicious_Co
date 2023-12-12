@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+
+<!-- grid -->
+		<style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+            gap: 20px; /* Add some spacing between grid items */
+        }
+
+        .product-card {
+            border: 1px solid #ddd; /* Add a border around each product card */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-image img {
+            max-width: 100%; /* Ensure images don't exceed the card width */
+            height: auto;
+        }
+    </style>
+	
+	
+	
+	
+	
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Products</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">...</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <hr/>
+
+    <main>
+        <!-- Categories Table -->
+        <table class="categories">
+            <tr>
+                <th>Category</th>
+                <th>Sizes</th>
+            </tr>
+            <tr>
+                <td>Bottles</td>
+                <td>330ml, 500ml, 750ml</td>
+            </tr>
+            <tr>
+                <td>Cans</td>
+                <td>330ml, 500ml, 750ml</td>
+            </tr>
+        </table>
+<hr/>
+<hr/>
+        <!-- Product 1 -->
+        <table>
+		<td>
+		<div class="product-grid">
+		
+		
+<!-- Product 1 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="product1.png" alt="Product 1">
+    </div>
+    <div class="product-details">
+        <h1><u>Savanna Dark</u></h1>
+        <h2>Premium Cider</h2>
+	<hr/>
+		<h3>Description</h3>
+		<p>New <u>Savanna Dark</u>, the full-flavoured golden cider from Savanna retails at a recommended selling price of <u><b>R55</b> per six-pack</u> and <u><b>R220</b> per case</u>.</p>
+		
+		<p>...following earlier launches of a market first – the bigger 500ml bottle – and the 330ml can.</p>
+		
+		
+<hr/>
+<br/>
+        <div class="reviews">
+            <h1><u>Reviews</u></h1>
+            <!-- Add a form for leaving a review with username input -->
+            <form class="review-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Your username">
+                <label for="review">Leave a Review:</label>
+                <textarea id="review" name="review" rows="3" cols="50"></textarea>
+                <button type="button" id="submit-review">Submit Review</button>
+            </form>
+            <!-- Display area for reviews, time, and likes -->
+            <div id="review-list"></div>
+        </div>
+    </div>
+    <div class="product-likes">
+        <div class="like-button">
+            <button id="like-button">Like</button>
+        </div>
+        <div class="like-count">
+            <span id="like-count">0</span> Likes
+        </div>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="product2.png" alt="Product 1">
+    </div>
+    <div class="product-details">
+        <h1><u>Hansa</u></h1>
+        <h2>Pilsener</h2>
+	<hr/>
+		<h3>Description</h3>
+		<p>A beer that is known amongst many in South Africa. This beer is perfect for sipping at any time with friends. <u><b>R79</b> per six-pack</u> and <u><b>R260</b> per case</u>.</p>
+		
+		
+		
+		
+<hr/>
+<br/>
+        <div class="reviews">
+            <h1><u>Reviews</u></h1>
+            <!-- Add a form for leaving a review with username input -->
+            <form class="review-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Your username">
+                <label for="review">Leave a Review:</label>
+                <textarea id="review" name="review" rows="3" cols="50"></textarea>
+                <button type="button" id="submit-review">Submit Review</button>
+            </form>
+            <!-- Display area for reviews, time, and likes -->
+            <div id="review-list"></div>
+        </div>
+    </div>
+    <div class="product-likes">
+        <div class="like-button">
+            <button id="like-button">Like</button>
+        </div>
+        <div class="like-count">
+            <span id="like-count">0</span> Likes
+        </div>
+    </div>
+</div>
+
+		
+		</table>
+<hr/>
+       
+        <!-- Add more product cards as needed -->
+
+    </main>
+	
+	<script>
+    // JavaScript function to handle review submission and display
+    const submitButton = document.getElementById("submit-review");
+    const reviewTextarea = document.getElementById("review");
+    const usernameInput = document.getElementById("username");
+    const reviewList = document.getElementById("review-list");
+    const likeButton = document.getElementById("like-button");
+    const likeCount = document.getElementById("like-count");
+
+    submitButton.addEventListener("click", () => {
+        const username = usernameInput.value;
+        const reviewText = reviewTextarea.value;
+        const currentDate = new Date();
+        const formattedTime = currentDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+        if (username && reviewText) {
+            const reviewElement = document.createElement("p");
+            reviewElement.textContent = `${username} (${formattedTime}): ${reviewText}`;
+            reviewList.appendChild(reviewElement);
+            reviewTextarea.value = "";
+            usernameInput.value = "";
+        }
+    });
+
+    let currentLikes = 100; // Initial number of likes
+    likeCount.textContent = currentLikes; // Display the initial number of likes
+
+    likeButton.addEventListener("click", () => {
+        currentLikes++; // Increment likes when the "Like" button is clicked
+        likeCount.textContent = currentLikes; // Update the displayed likes count
+    });
+</script>
+</body>
+</html>
