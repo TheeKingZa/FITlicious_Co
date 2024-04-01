@@ -6,21 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitlious Co.</title>
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        nav {
-            border: 3px solid lime;
-            display: flex;            
-        }
-
-        ul, li {
-            list-style: none;
-        }
-        /* Added styles for the review items */
-        #reviewsList li {
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -35,17 +20,19 @@
     </header>
     <main>
         <!-- Main content of the home page -->
-        <h2>Welcome, <span id="username">John Doe</span>!</h2>
+        <h2>Welcome, <span id="username">{ username }</span>!</h2>
         <article>
             <p>This is the home page content.</p>
         </article>
         
         <!-- Reviews section -->
-        <aside id="reviewsSection">
+        <aside id="reviewsSection" class="aside">
             <h3>Latest Reviews</h3>
+            <div class="post-review">
             <ul id="reviewsList">
                 <!-- Reviews will be dynamically added here -->
             </ul>
+        </div>
         </aside>
     </main>
     <footer>
