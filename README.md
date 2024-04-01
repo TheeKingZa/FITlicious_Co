@@ -1,6 +1,8 @@
-readme file
-
-This a busness website.
-Rights are Reserved.
-
-Thanks
+project/
+├── index.html
+├── login.html
+├── signup.html
+├── profile.html
+├── reviews.html
+├── styles.css
+└── script.js
