@@ -713,12 +713,13 @@
   }
   
   .card-services a:hover {
-    color: var(--color-white);
+    color: var(--color-black);
     background: var(--color-black);
     text-decoration: none;
     transition-duration: 0.5s;
     transition-property: color, background-color;
   }
+
   
   /* Card TESTIMONIAL
       ============================= */
@@ -1106,9 +1107,81 @@
 
 
 
-  #beers {
+  #warning {
     /* background-image: url(./images/No_under_eighteen.png); */
     border: 5px solid black;
     max-width: 10%;
     height: 50%;
+  }
+
+  #beers a:hover {
+    background-image: url(./images/liquors/beers.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #ciders a:hover {
+    background-image: url(./images/liquors/ciders.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #sparkling-wine a:hover {
+    background-image: url(./images/liquors/sparkling_wine.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #wine a:hover {
+    background-image: url(./images/liquors/wine.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #whisky-rum a:hover {
+    background-image: url(./images/liquors/whisky_rum.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #cognac-tequila a:hover {
+    background-image: url(./images/liquors/cognac_tequila.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #vodka a:hover {
+    background-image: url(./images/liquors/vodka.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #brandy a:hover {
+    background-image: url(./images/liquors/brandy.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  #gin a:hover {
+    background-image: url(./images/liquors/gin.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
   }
