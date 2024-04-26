@@ -586,19 +586,6 @@
     }
   }
   
-  /* Section Latest news
-      ============================= */
-  
-  .section-latest-news .row {
-    flex-direction: row-reverse;
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .section-latest-news .row {
-      flex-direction: column;
-    }
-  }
-  
   /* Section SERVICES
       ============================= */
   
@@ -727,9 +714,9 @@
   
   .card-services a:hover {
     color: var(--color-white);
-    background: var(--color-primary);
+    background: var(--color-black);
     text-decoration: none;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     transition-property: color, background-color;
   }
   
@@ -804,10 +791,17 @@
   }
 
 
-.hero-homepage2 {
-    background-image: url(./images/banner-home.jpg);
-    max-width: 100%;
-    min-height: 100%;
+  .hero-homepage {
+    background-image: url(./images/banner-home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-welcome {
+  background-image: url(./images/banner-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
   
   /* Post
@@ -1107,4 +1101,14 @@
     padding: 0;
     cursor: text;
     margin: 0 1rem;
+  }
+
+
+
+
+  #beers {
+    /* background-image: url(./images/No_under_eighteen.png); */
+    border: 5px solid black;
+    max-width: 10%;
+    height: 50%;
   }
