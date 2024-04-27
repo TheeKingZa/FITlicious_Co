@@ -798,11 +798,11 @@
     background-size: contain;
 }
 
-.hero-welcome {
-  background-image: url(./images/banner-home.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.body-welcome {
+  background-image: url(./images/banner-welcome.png);
+  background-size: cover;
+  background-color: gold;
+  background-position: absolute;
 }
   
   /* Post
