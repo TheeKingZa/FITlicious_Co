@@ -1,0 +1,116 @@
+.grid {
+    align-items: center;
+    border: 3px solid var(--clr-main);
+}
+
+.grid ul li,
+.grid ul li a {
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--clr-main);
+    text-decoration: none;
+    list-style: none;
+}
+
+.grid ul li a:hover {
+    color: var(--clr2-secondary);
+    padding: 15px;
+    text-shadow: 0 10px 3px var(--clr-black);
+}
+
+
+
+#beers a:hover {
+background-image: url(../../images/liquors/beers.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#ciders a:hover {
+background-image: url(../../images/liquors/ciders.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#sparkling-wine a:hover {
+background-image: url(../../images/liquors/sparkling_wine.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#wine a:hover {
+background-image: url(../../images/liquors/wine.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#whisky-rum a:hover {
+background-image: url(../../images/liquors/whisky_rum.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#cognac-tequila a:hover {
+background-image: url(../../images/liquors/cognac_tequila.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#vodka a:hover {
+background-image: url(../../images/liquors/vodka.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#brandy a:hover {
+background-image: url(../../images/liquors/brandy.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+#gin a:hover {
+background-image: url(../../images/liquors/gin.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+max-width: 100%;
+}
+
+
+/*
+Price lists
+===================================== */
+
+table {
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    border: 4px solid gold;
+    justify-content: center;
+    }
+    
+    th {
+    font-size: 25pt;
+    }
+    
+    td {
+    font-size: 12pt;
+    }

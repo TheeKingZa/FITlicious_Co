@@ -8,127 +8,133 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- css links -->
+    <link rel="stylesheet" href="./static/css/root.css">
+    <link rel="stylesheet" href="./static/css/screen.css">
+    <link rel="stylesheet" href="./static/css/nav.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/card.css">
+    <link rel="stylesheet" href="./static/css/product.css">
   </head>
   <body>
-    <!– Header –>
-    <header class="header" data-section-theme="dark">
-      <div class="container">
-        <div class="header-container">
-          <div class="header-logo">
-            <a href="home.html">
-              <img src="./images/logo-white.png" alt="Fitlicious Co." width="160" height="40">
+    
+    <!-- <header>
+    <h1 ></h1>
+  </header> -->
+    <div class="nav-div">
+    <div>
+          <a href="home.html">
+          <div class="logo"></div>
             </a>
-          </div>
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn">
-            <span class="navicon"></span>
-          </label>
-          <nav class="navbar-menu">
-            <ul class="nav">
-              <li class="nav-item">
+            <nav class="nav-menu">
+              <ul class="nav-list">
+              <li>
                 <a href="home.html" class="nav-link">HOME</a>
               </li>
-              <li class="nav-item">
-                <a href="#services" class="nav-link">OUR LIQUORS</a>
+              <li>
+                <a href="#our-liquors" class="nav-link">OUR LIQUORS</a>
               </li>
-              <li class="nav-item">
+              <li>
                 <a href="#events" class="nav-link">EVENTS</a>
               </li>
-              <li class="nav-item">
+              <li>
                 <a href="#about" class="nav-link">ABOUT</a>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">CONTACT</a>
-              </li>
-              <!-- <li class="nav-item">
-                <form action="#" method="post" class="form-search">
-                  <input type="search" name="q" id="search-input" placeholder="Search..." aria-label="Search through site content">
-                  <button class="search-button">
-                    <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="search-icon">
-                      <title>
-                        Search icon
-                      </title>
-                      <path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/>
-                    </svg>
-                  </button>
-                </form>
-              </li>
-            -->
-              
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+                <li>
+                  <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
 
+          <div class="logo-4x4"></div>
+        </div>
+    
 
     <!– Main –>
     <main>
-      <h1 class="visually-hidden">Homepage</h1>
-      <!– Hero section –>
-      <section class="section-hero hero-homepage" data-section-theme="dark">
-        <div class="container">
-          <div class="section-body">
-            <section class="section-inner">
-            </section>
-          </div>
-        </div>
-      </section>
       <div>
         <img src="./images/No_under_eighteen.png" id="warning"/>
       </div>
-      <!– Services section –>
-      <section id="services" class="section section-services">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title" >OUR</h2>
-            <p class="section-tagline">Liquors</p>
-          </header>
-          <div class="section-body" >
-            <ul class="row">
-              <li class="col-1-3">
-                <div class="card-services" >
-                      <h3 class="card-title" id="beers"><a href="6packs.html">BEERS( 6pack )</a></h3>
+      <section>
+        <div>
+            <h1 id="our-liquors">OUR</h1>
+            <span>Liquors</span>
+          
+          <div class="grid">
+            <ul>
+              <li >
+                <div id="beers">
+                  <a href="6packs.html">
+                      <h3 >
+                        BEERS( 6pack )
+                      </a>
+                    </h3>
                     </div>
                   </li>
-                  <li class="col-1-3">
-                    <div class="card-services">
-                      <h3 class="card-title" id="ciders"><a href="6packs.html">CIDERS( 6pack )</a></h3>
+                  
+                  <li >
+                    <div >
+                      <h3  id="ciders"><a href="6packs.html">
+                        CIDERS( 6pack )
+                      </a>
+                    </h3>
                     </div>
                   </li>
-                  <li class="col-1-3">
-                    <div class="card-services">
-                      <h3 class="card-title" id="sparkling-wine"><a href="wine.html">SPARKLING WINE</a></h3>
+                  <li >
+                    <div >
+                      <h3  id="sparkling-wine"><a href="wine.html">
+                        SPARKLING WINE
+                      </a>
+                    </h3>
                     </div>
                   </li>
-                  <li class="col-1-3">
-                    <div class="card-services">
-                      <h3 class="card-title" id="wine" ><a href="wine.html">WINE</a></h3>
+                  <li >
+                    <div >
+                      <h3  id="wine" ><a href="wine.html">
+                        WINE
+                      </a>
+                    </h3>
                     </div>
                   </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title" id="whisky-rum"><a href="hotstuff.html">WHISKY/RUM</a></h3>
+              <li >
+                <div >
+                  <h3  id="whisky-rum"><a href="hotstuff.html">
+                    WHISKY/RUM
+                  </a>
+                </h3>
                 </div>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title" id="cognac-tequila"><a href="hotstuff.html">COGNAC/TEQUILA/LIQUORS</a></h3>
+              <li>
+                <div>
+                  <h3 id="cognac-tequila"><a href="hotstuff.html">
+                    COGNAC/TEQUILA/LIQUORS
+                  </a>
+                </h3>
                 </div>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title" id="vodka"><a href="hotstuff.html">VODKA</a></h3>
+              <li>
+                <div>
+                  <h3 id="vodka"><a href="hotstuff.html">
+                    VODKA
+                  </a>
+                </h3>
                 </div>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title" id="brandy"><a href="hotstuff.html">BRANDY</a></h3>
+              <li>
+                <div>
+                  <h3 id="brandy"><a href="hotstuff.html">
+                    BRANDY
+                  </a>
+                </h3>
                 </div>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title" id="gin"><a href="hotstuff.html">GIN</a></h3>
+              <li>
+                <div>
+                  <h3 id="gin"><a href="hotstuff.html">
+                    GIN
+                  </a>
+                </h3>
                 </div>
               </li>
             </ul>
@@ -136,19 +142,19 @@
         </div>
       </section>
       <!– EVENTS section –>
-      <section id="events" class="section section-EVENTS" data-section-theme="dark">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">ON US!</h2>
-            <p class="section-tagline">Take a look at our deals</p>
-          </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
+      <section id="events"  data-section-theme="dark">
+        <div>
+          
+            <h1>ON US!</h1>
+            <span>Take a look at our deals</span>
+          
+          <div class="offers">
+            <ul>
+              <li>
                 <article class="card-work">
                   <div class="card-outer">
                     <div class="card-image">
-                      <img src="./images/pic-work-01.jpg" alt="">
+                      <img src="./images/pic-work-01.jpg" alt="logo">
                     </div>
                     <div class="card-inner">
                       <h3 class="card-title"><a href="hosting.html">HOSTING</a></h3>
@@ -156,7 +162,7 @@
                   </div>
                 </article>
               </li>
-              <li class="col-1-3">
+              <li>
                 <article class="card-work">
                   <div class="card-outer">
                     <div class="card-image">
@@ -168,7 +174,7 @@
                   </div>
                 </article>
               </li>
-              <li class="col-1-3">
+              <li>
                 <article class="card-work">
                   <div class="card-outer">
                     <div class="card-image">
@@ -185,66 +191,65 @@
         </div>
       </section>
       <!– About Us section –>
-      <section id="about" class="section section-about-us">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">About us</h2>
-            <p class="section-tagline">Everything about us</p>
-          </header>
-          <div class="section-body">
-            <div class="row">
-              <div class="col-1-2">
-                <img
-                  sizes="(max-width: 3000px) 40vw, 1200px"
-                  srcset="
-                  ./images/responsive/about-us_icoxoo_c_scale,w_380.jpg 380w,
-                  ./images/responsive/about-us_icoxoo_c_scale,w_853.jpg 853w,
-                  ./images/responsive/about-us_icoxoo_c_scale,w_1200.jpg 1200w"
-                  src="./images/responsive/about-us_icoxoo_c_scale,w_1200.jpg"
-                  alt="">
+      <section id="about">
+        <div>
+          
+            <h1>About us</h1>
+            <span>Everything about us</span>
+          
+          <div class="def-div">
+            <div>
+              <h3>Who are we</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
+            </div>
+            <div>
+            <h3>Our culture</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
               </div>
-              <div class="col-1-2">
-                <h3>Who are we</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
-                <h3>Our culture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
+               <div>
                 <h3>How we work</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
-              </div>
-            </div>
+                </div>
           </div>
       </section>
       <!– Contact section –>
-      <section id="contact" class="section section-contact">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-tagline">FOR ANY QUESTIONS</p>
-          </header>
-          <div class="section-body" >
-            <center><p>We would love to hear from you.</p></center>
+      <section id="contact">
+        <div class="def-divx2">
+        <div class="get-in-touch">
+          
+          <div>
+            <h1 >Contact Us</h1>
+            <span>FOR ANY QUESTIONS</span>
           </div>
-          <div class="section-footer">
-            <a href="mailto:proceedingmc@gmail.com" class="button">Get in touch</a>
+          <div>
+          <p>We would love to hear from you.</p>
           </div>
+          <div >
+            <a href="mailto:proceedingmc@gmail.com">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="img-logo"></div>
         </div>
       </section>
     </main>
-
+    
 
     
     <!– Footer –>
     <footer class="footer" data-section-theme="dark">
-      <div  class="container">
-        <div class="row">
-          <div class="col-1-2">
-            <img src="./images/logo-white.png" alt="Fitlicious Co." width="160" height="40">
-            <address class="footer-address">
-            Vanderbijlpark<br>
-            Gauteng
-            </address>
+      <div >
+        <div>
+          <div class="logo">
+            <!-- <img src="./images/logo-white.png" alt="Fitlicious Co." width="160" height="40"> -->
           </div>
-          <div class="col-1-2">
+            <div>
+              <address class="footer-address">
+                Vanderbijlpark<br>
+                Gauteng
+              </address>
+            </div>
+          <div>
             <ul class="social nav">
               <li class="social-item nav-item">
                 <a href="https://www.facebook.com/profile.php?id=100076334163515" class="social-link">
@@ -280,11 +285,11 @@
           </div>
         </div>
         <hr>
-        <div class="row">
-          <div class="col-1-2">
+        <div>
+          <div>
             <p class="footer-copyright">Fitlicious Co. © 2024 made with ♥ by Pule Mathikha.</p>
           </div>
-          <div class="col-1-2">
+          <div>
             <ul class="footer-nav nav">
               <li class="footer-nav-item nav-item">
                 <a href="#" class="footer-nav-link">Terms of use</a>

@@ -1,0 +1,15 @@
+.offers {
+    background-color: var(--clr-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers article {
+    position: relative;
+}
+
+.offers ul li {
+    position: relative;
+    list-style: none;
+}
