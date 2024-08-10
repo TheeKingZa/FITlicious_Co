@@ -9,9 +9,13 @@ overflow: hidden;
 
 .card-work:hover .card-outer {
     transform: scale(0.95);
+    border: 3px solid var(--clr2-main);
+    border-radius: 25px;
+    transition: 1s ease-in;
 }
 
 .card-work .card-image img {
+    border-radius: 25px;
     height: 30rem;
     width: 100%;
     object-fit:cover;
@@ -50,9 +54,7 @@ position: relative;
 
 .card-work .card-title a {
     color: var(--clr2-main);
-    display: block;
-    text-decoration: none;
-    padding-top: 50%;
+    top: 50%;
 }
 
 .card-work .card-title a::after {
@@ -70,7 +72,6 @@ position: relative;
 
 
 .card-work:hover {
-    border: 3px solid var(--clr2-main);
     border-radius: 25px;
     transition: 1s ease-out;
 }

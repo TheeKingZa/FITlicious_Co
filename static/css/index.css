@@ -1,15 +1,16 @@
 .offers {
     background-color: var(--clr-main);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    border-radius: 25px;
 }
 
 .offers article {
+}
+
+.offers .card-list a {
     position: relative;
 }
 
-.offers ul li {
-    position: relative;
-    list-style: none;
+.offers img {
+    border-radius: 25px;
 }

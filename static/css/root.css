@@ -98,13 +98,12 @@ main {
 }
 
 .img-logo {
-  background-color: var(--clr-main);
+  background-color: var(--clr-white);
   background-image: url(../../images/favicon.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 
 /* Footer  */
 
