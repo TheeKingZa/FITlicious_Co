@@ -56,7 +56,35 @@
 @media (width > 500px) {
 
     body {
+        font-size: var(--fnt-M);
+    }
+    .nav-div {
+        gap: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 5px solid;
+        border-bottom-left-radius: 25px;
+    }
+    .nav-list {
         font-size: var(--fnt-S);
+    }
+    
+    .logo {
+        /* width: 200%; */
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        background-image: url('../../images/logo-white.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;  
+    }
+
+    .logo-4x4 {
+        height: 200px;
+        background-color: var(--clr2-main);
+        border-radius: 25px;
+
     }
 
     .def-divx2 {
@@ -74,9 +102,7 @@
         transition: 1s ease-in;
       }
 
-      .nav-list {
-        font-size: var(--fnt-S);
-    }
+
 
     .grid .menu{
         width: 100%;
@@ -84,4 +110,30 @@
         justify-content: center;
         align-items: center;
     }
+
+    footer {
+        font-size: var(--fnt-M);
+    }
+
+    .bg-img {
+        opacity: 1;
+        background-image: url(../../images/No_under_eighteen.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--clr2-main);
+        animation: hider 1s ease-in-out;
+    }
+}
+
+
+@keyframes hider {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
 }

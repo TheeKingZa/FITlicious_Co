@@ -2,7 +2,6 @@
  * Navigation setup 
  =====================*/
  header {
-    border: 3px solid lime;
     display: flex;
  }
 .nav-div {

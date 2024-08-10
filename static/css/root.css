@@ -108,6 +108,7 @@ main {
 /* Footer  */
 
 footer {
+  color: var(--clr2-main);
   padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -119,4 +120,10 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
+}
+
+.footer-address {
+  margin: 5vh 0 5vh;
+  display: flex;
+  justify-content: center;
 }
