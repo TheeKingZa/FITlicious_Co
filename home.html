@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/root.css">
-    <title>Fitlicious Co - Index</title>
+    <link rel="stylesheet" href="./static/css/home.css">
+    <title>Fitlicious Co - Home</title>
 </head>
 <body>
     <header>
         <h1>Fitlicious Co.</h1>
-        <span>
-            <a href="./home.html" class="button">Join Us!</a>
-        </span>
+        <nav>
+            <a href="index.html">Exit</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contacts</a>
+        </nav>
     </header>
-      
-    <div class="logo-head"></div>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Fitlicious Co., your partner in fitness and wellness. Our mission is to help you achieve your health goals through expert guidance and personalized programs.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Personal Training Sessions</li>
+                <li>Customized Nutrition Plans</li>
+                <li>Group Fitness Classes</li>
+                <li>Online Coaching</li>
+            </ul>
+            <a href="#" class="button">Learn More</a>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p>Have questions? We're here to help. Reach out to us today!</p>
+            <a href="mailto:contact@fitliciousco.com" class="button">Get in Touch</a>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-elements">
@@ -23,9 +49,7 @@
                 <a href="#"><img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook_page"></a>
                 <a href="#"><img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="whatsapp_Channel"></a>
                 <a href="#"><img class="footer-socials" src="./static/data/images/Socials/x.png" alt="X"></a>
-
             </div>
-
             <div class="reservedrights">
                 <p>FITlicious Co. © <span id="current-year"></span>. All rights reserved.</p>
             </div>
@@ -33,11 +57,8 @@
     </footer>
 
     <!-- JavaScript Links -->
-    <!-- Inline Script to Update Current Year -->
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-
-
 </body>
 </html>

@@ -46,7 +46,7 @@ header {
     top: 2%;
     left: 2%;
 
-    background-image: url("./static/data/images/logo_black.png");
+    background-image: url("../data/images/logo_black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -79,30 +79,32 @@ a:hover {
  */
 
 footer {
+    width: 100%;
     text-align: center;
-    position: fixed;
+    
+    
+    position: sticky;
     bottom: 0;
     
-
 }
 
 .footer-elements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
 }
 
 .socials {
+    width: 35%;
     padding: 10pt;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .reservedrights {
-    position: sticky;
-    bottom: 0;
-    border: 3px inset var(--clr-3rd);
-    padding: 10pt;
-    margin-bottom: 2vh;
-    
+    border: 3px inset var(--clr-b);
+    padding: 5pt;    
+    background-color: var(--clr-3rd);
+    font-weight: bold;
 }
