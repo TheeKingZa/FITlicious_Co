@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/root.css">
-    <title>Welcome Page.</title>
+    <title>Fitlicious Co - Index</title>
 </head>
-<body class="body-welcome">
-  <!-- Breaks -->
-  <br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br>
-    <h1 class="visually-hidden">Homepage</h1>
-      <!– Hero section –>
-      <section data-section-theme="dark">
-        <div class="container">
-          <div class="section-body">
-            <section class="section-inner">
-            </section>
-          </div>
-          <div>
-          <h1>Welcome to Fitlicious Co.</h1>
-          <a href="home.html" class="button">Let's Get Started</a>
+<body>
+    <header>
+        <h1>Fitlicious Co.</h1>
+        <span>
+            <a href="#" class="button">Join Us!</a>
+        </span>
+    </header>
+      
+    <div class="logo-head"></div>
+
+    <footer>
+        <div class="footer-elements">
+            <div class="socials">
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="Youtube"></a>
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook_page"></a>
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="whatsapp_Channel"></a>
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/x.png" alt="X"></a>
+
+            </div>
+
+            <div class="reservedrights">
+                <p>FITlicious Co. © <span id="current-year"></span>. All rights reserved.</p>
+            </div>
         </div>
-      </div>
-      </section>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    </footer>
+
+    <!-- JavaScript Links -->
+    <!-- Inline Script to Update Current Year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
 
 </body>
 </html>
