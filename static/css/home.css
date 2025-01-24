@@ -1,27 +1,5 @@
 /* Home Page Specific Styles */
 
-/* Header Navigation */
-header nav {
-    margin-top: 10px;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--clr-3rd);
-    font-weight: bold;
-    margin: 0 15px;
-    padding: 10px 15px;
-    border: 2px solid var(--clr-3rd);
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-header nav a:hover {
-    background-color: var(--clr-3rd);
-    color: var(--clr-b);
-    border: 2px solid var(--clr-w);
-}
-
 /* Main Content */
 main {
     padding: 20px;
@@ -84,9 +62,9 @@ main a.button:hover {
 
 /* Responsive Design */
 /* Large Screens */
-@media (max-width < 500px) {
+@media (width < 500px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     main section {

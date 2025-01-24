@@ -25,6 +25,13 @@
     --test: lime;
     --err: red;
     /* Fonts */
+    --fnt-xs: 0.5rem;
+    --fnt-s: 0.8rem;
+    --fnt-m: 1rem;
+    --fnt-l: 1.5rem;
+    --fnt-xl: 1.8rem;
+    --fnt-xxl: 2rem;
+
 }
 
 /* social link thubnails/logos */
@@ -35,12 +42,14 @@
 
 /* header */
 header {
+    padding: 20px;
     text-align: center;
 }
 
+/* Logo Default position. */
 .logo-head {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     
     position: fixed;
     top: 2%;
@@ -52,6 +61,32 @@ header {
     background-size: contain;
     
 }
+
+
+/*Navigation */
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 0px;
+    color: var(--clr-3rd);
+    transition: all 0.5s ease; 
+    border-radius: 5px;
+    /* 
+    border: 2px solid var(--clr-3rd);
+    */
+}
+
+nav a:hover {
+    background-color: var(--clr-3rd);
+    color: var(--clr-b);
+    border: 2px solid var(--clr-w);
+}
+
 /* Body */
 body {
     min-height: 100vh;
@@ -81,11 +116,9 @@ a:hover {
 footer {
     width: 100%;
     text-align: center;
-    
-    
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    
+    padding: 10px;
 }
 
 .footer-elements {
@@ -97,14 +130,41 @@ footer {
 
 .socials {
     width: 35%;
-    padding: 10pt;
+    padding: 8pt;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-shadow: 0 5px 20px 1px;
+    border-radius: 25px;
+    
 }
 
 .reservedrights {
-    border: 3px inset var(--clr-b);
-    padding: 5pt;    
-    background-color: var(--clr-3rd);
+    box-shadow: 0 8px 20px ;
+    border-radius: 25px;
+    border: 2px inset var(--clr-b);
+    padding: 9pt;    
+    background-color: var(--clr-w);
     font-weight: bold;
+}
+
+/* Responsive Design */
+/* Large Screens */
+@media (width < 500px) {
+    body {
+        font-size: var(--fnt-s);
+    }
+
+    nav {
+        font-size: var(--fnt-s);
+    }
+
+    footer {
+        font-size: var(--fnt-xs);
+    }
+
+    /* social link thubnails/logos */
+    .socials img {
+        width: 15px;
+        height: 15px;
+    }
 }

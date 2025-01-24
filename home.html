@@ -5,40 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/root.css">
     <link rel="stylesheet" href="./static/css/home.css">
-    <title>Fitlicious Co - Home</title>
+    <title>FITlicious Co. - Home</title>
 </head>
 <body>
-    <header>
-        <h1>Fitlicious Co.</h1>
-        <nav>
-            <a href="index.html">Exit</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contacts</a>
-        </nav>
-    </header>
-
+    <div class="logo-head"></div>
+    <!-- <header>
+        <h1>FITlicious Co.</h1>
+    </header> -->
+    <nav>
+        <a style="color: red; font-weight: bold; border-color: red;" href="./index.html">Exit</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to Fitlicious Co., your partner in fitness and wellness. Our mission is to help you achieve your health goals through expert guidance and personalized programs.</p>
+        <section id="intro">
+            <h2>FITlicious Co.</h2>
+            <p>@FITlicious, we bring the authentic taste of township flavors to your table. From hearty meals to flavorful street food, experience the best bites from Kasi.</p>
+            <a href="#menu" class="button">Explore Our Menu</a>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
+        <section id="menu">
+            <h2>Our Menu</h2>
             <ul>
-                <li>Personal Training Sessions</li>
-                <li>Customized Nutrition Plans</li>
-                <li>Group Fitness Classes</li>
-                <li>Online Coaching</li>
+                <li>Grilled Chicken with Pap and Chakalaka</li>
+                <li>Traditional Bunny Chow</li>
+                <li>Vetkoek with Mince</li>
+                <li>Kota (Loaded Sandwich)</li>
+                <li>Magwinya (Fried Dough Balls)</li>
             </ul>
-            <a href="#" class="button">Learn More</a>
+            <a href="#" class="button">View Full Menu</a>
+        </section>
+
+        <section id="specials">
+            <h2>Daily Specials</h2>
+            <p>Don’t miss out on our amazing deals!</p>
+            <ul>
+                <li>Monday Madness: 2 Kotas for the price of 1</li>
+                <li>Weekend Special: Grilled Chicken + Pap Combo at 20% off</li>
+            </ul>
         </section>
 
         <section id="contact">
             <h3>Contact Us</h3>
-            <p>Have questions? We're here to help. Reach out to us today!</p>
-            <a href="mailto:contact@fitliciousco.com" class="button">Get in Touch</a>
+            <p>Got questions or want to place an order? We’re just a message away!</p>
+            <a href="mailto:kasibites@fitlicious.com" class="button">Get in Touch</a>
         </section>
     </main>
 
@@ -56,7 +68,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript Links -->
+    <!-- JavaScript -->
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
