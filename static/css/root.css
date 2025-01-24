@@ -46,7 +46,7 @@ header {
     top: 2%;
     left: 2%;
 
-    background-image: url("./static/data/images/logo_black.png");
+    background-image: url("/static/data/images/logo_black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -62,7 +62,7 @@ body {
 
     background-color: var(--clr-main);
 
-    background-image: var("./static/data/images/logo_black.png");
+    /* background-image: var("./static/data/images/logo_black.png"); */
 }
 
 /* Hyperlinks interaction */
