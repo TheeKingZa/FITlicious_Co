@@ -49,7 +49,7 @@ we’ve got something for everyone, every dish is crafted with love and passion 
 
 To ensure Fitlicious Co. ranks well on search engines, we’ve implemented the following:
 
-1. **Keyword Research**: Targeting relevant search terms like "Kota," "Bunny Chow," "Healthy Meals," and "Kasi Bites"
+1. **Keyword Research**: Targeting relevant search terms like "Kota," "Monday Madness," "Healthy Meals," and "Kasi Bites"
 2. **Meta Descriptions & Tags**: Optimized for each page for better discoverability.
 3. **Backlink Building**: Developing partnerships to improve our domain authority.
 
