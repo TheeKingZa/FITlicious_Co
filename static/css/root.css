@@ -18,7 +18,7 @@
     --clr-b : black;
     --clr-w : white;
     /* Application Colors */
-    --clr-main: rgb(102, 100, 100);
+    --clr-main: rgb(62, 62, 62);
     --clr-2nd: gold;
     --clr-3rd: rgb(255, 166, 0);
     /* debugging Colors */
@@ -45,7 +45,15 @@ header {
     padding: 20px;
     text-align: center;
 }
+/* Address */
+.address {
+    top: 2%;
+    left: 2%;
+    position: fixed;
 
+    color: var(--clr-3rd);
+
+}
 /* Logo Default position. */
 .logo-head {
     width: 70px;
@@ -109,6 +117,24 @@ a:hover {
     color: var(--clr-2nd);
 
 }
+
+/* Default Buttons */
+button {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: var(--fnt-xs);
+}
+
+button:hover {
+    color: var(--clr-b);
+    font-size: var(--fnt-s);
+    font-weight: bold;
+    box-shadow: 0 15px 45px var(--clr-w);
+    transition: .25s ease-in-out;
+    background-color: var(--clr-3rd);
+}
+
+
 /* 
  * Footer
  */

@@ -10,13 +10,11 @@ main {
 main section {
     margin: 30px 0;
     padding: 20px;
-    background-color: var(--clr-3rd);
+    background-color: var(--clr-main);
     color: var(--clr-b);
-    border-top: 4px ridge var(--clr-2nd);
-    border-left: 1px ridge var(--clr-2nd);
-    border-right: 1px ridge var(--clr-2nd);
-
-
+    border-top: 6px ridge var(--clr-2nd);
+    border-left: 2px ridge var(--clr-2nd);
+    border-right: 2px ridge var(--clr-2nd);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -24,9 +22,12 @@ main section {
 main section h2, 
 main section h3 {
     color: var(--clr-b);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 main section p {
+    color: var(--clr-3rd);
     margin: 15px 0;
     line-height: 1.6;
 }
@@ -36,6 +37,7 @@ main section ul {
     padding-left: 40px;
     text-align: left;
     margin-top: 15px;
+    color: var(--clr-w);
 }
 
 main section ul li {
@@ -47,21 +49,21 @@ main a.button {
     text-decoration: none;
     padding: 10px 20px;
     background-color: var(--clr-main);
-    color: var(--clr-w);
+    color: var(--clr-2nd);
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: all .5s ease;
 }
 
 main a.button:hover {
-    background-color: var(--clr-w);
+    background-color: var(--clr-3rd);
     color: var(--clr-b);
     font-weight: bold;
 }
 
 /* Responsive Design */
-/* Large Screens */
+/* Small Screens */
 @media (width < 500px) {
     header h1 {
         font-size: 1rem;
