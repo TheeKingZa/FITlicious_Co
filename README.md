@@ -4,12 +4,6 @@ Fitlicious Co. is a food-focused website showcasing our delicious offerings, inc
 
 ---
 
-## Website Demo
-
-Check out the live site: [Fitlicious Co. Web Demo](https://theekingza.github.io/Fitilious_Co/index.html)
-
----
-
 ## Table of Contents
 
 - [About Fitlicious Co.](#about-fitlicious-co)
@@ -24,14 +18,18 @@ Check out the live site: [Fitlicious Co. Web Demo](https://theekingza.github.io/
 
 ## About Fitlicious Co.
 
-Fitlicious Co. is more than just a website; it’s a hub for food enthusiasts. Whether you're a fan of South African classics or modern loaded sandwiches, we’ve got something for everyone. From breakfast bowls to spicy curries and hearty dinners, every dish is crafted with love and passion for flavor.
+Fitlicious Co. is more than just a website; it’s a hub for food enthusiasts. 
+
+Whether you're a fan of South African classics or modern, Grills & Chips, Traditional Food Platter, Platters, Cooked Meals and Braai Meat.
+
+we’ve got something for everyone, every dish is crafted with love and passion for flavor.
 
 ---
 
 ## Key Features
 
 - **Beautiful Design**: A clean and responsive design that works on all devices.
-- **Delicious Menu**: Showcasing Kotas, Loaded Sandwiches, and a variety of healthy meals.
+- **Delicious Menu**: Grills & Chips, Traditional Food Platter, Platters, Cooked Meals and Braai Meat and a variety of healthy meals.
 - **Interactive Call-to-Actions**: Buttons like "Join Us!" and "View Full Menu" encourage user engagement.
 - **SEO Optimized**: Improved search rankings to ensure customers can find us easily.
 - **Social Media Integration**: Links to YouTube, Facebook, WhatsApp, and X (Twitter) for better outreach.
@@ -51,7 +49,7 @@ Fitlicious Co. is more than just a website; it’s a hub for food enthusiasts. W
 
 To ensure Fitlicious Co. ranks well on search engines, we’ve implemented the following:
 
-1. **Keyword Research**: Targeting relevant search terms like "Kota," "Bunny Chow," "Healthy Meals," and "Loaded Sandwiches."
+1. **Keyword Research**: Targeting relevant search terms like "Kota," "Bunny Chow," "Healthy Meals," and "Kasi Bites"
 2. **Meta Descriptions & Tags**: Optimized for each page for better discoverability.
 3. **Backlink Building**: Developing partnerships to improve our domain authority.
 
@@ -64,9 +62,9 @@ To ensure Fitlicious Co. ranks well on search engines, we’ve implemented the f
 
 ## Technologies Used
 
-- **HTML**: For structuring web pages.
-- **CSS**: Styling with `root.css` for shared styles and `home.css` for page-specific customization.
-- **JavaScript**: For dynamic content updates, like the footer year.
+- **HTML**: Structuring web pages.
+- **CSS**: Styles for customization.
+- **JavaScript**: For dynamic content updates.
 - **GitHub Pages**: Hosting the live demo.
 
 ---
@@ -88,3 +86,13 @@ For inquiries or collaborations, reach out to us via:
 
 # Credits
 Created by [`Pule Mathikha`](https://github.com/theekingza) as a passion project to share South Africa’s vibrant culture with the world.
+
+===
+
+---
+
+## Website Demo
+
+Check out the live site: [Fitlicious Co. Web Demo](https://theekingza.github.io/Fitilious_Co/index.html)
+
+===
