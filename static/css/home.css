@@ -5,6 +5,17 @@ main {
     padding: 20px;
     text-align: center;
     margin: 5vh 0 10vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (width < 500px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
 }
 
 main section {
