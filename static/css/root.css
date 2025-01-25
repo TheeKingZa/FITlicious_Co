@@ -144,18 +144,32 @@ a:hover {
 button {
     padding: 5px;
     border-radius: 5px;
-    font-size: var(--fnt-xs);
+    font-size: var(--fnt-s);
 }
 
 button:hover {
     color: var(--clr-b);
     font-size: var(--fnt-s);
     font-weight: bold;
-    box-shadow: 0 15px 45px var(--clr-w);
     transition: .25s ease-in-out;
     background-color: var(--clr-3rd);
 }
 
+.footer-btn-link {
+    padding: 5px;
+    font-size: var(--fnt-s);
+    background-color: var(--clr-main);
+    border: none;
+}
+
+.footer-btn-link:hover {
+    border-radius: 5px;
+    color: var(--clr-w);
+    font-size: var(--fnt-s);
+    font-weight: bold;
+    background-color: var(--clr-main);
+    transition: .25s ease-in-out;
+}
 
 /* 
  * Footer
@@ -210,13 +224,22 @@ footer {
 }
 
 .info-links-list a {
+    display: flex;
     color: black;
     text-decoration: none;
     list-style: none;
 }
 
 .info-links-list a:hover {
-    color: var(--clr-3rd);
+}
+
+.info-links-list{
+    position: relative;
+    bottom: 0;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Responsive Design */
