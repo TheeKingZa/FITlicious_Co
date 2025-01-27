@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO optimazation -->
+        <meta name="description" content="Fitlicious Co. offers authentic South African cooked meals, grilled dishes, platters, and daily specials. Taste the vibrant flavors of Kasi bites!">
+        <meta name="keywords" content="Fitlicious Co., South African food, Kasi Bites, Cooked Meals, Full Chicken, Grills & Chips, Braai Meat, Platters, Healthy Food">
+        <meta name="author" content="Pule Mathikha">
+        <meta property="og:title" content="Fitlicious Co. - Authentic South African Meals">
+        <meta property="og:description" content="Explore South Africa's vibrant food culture with Fitlicious Co. From hearty meals to flavorful platters, we bring Kasi flavors to your table.">
+        <meta property="og:image" content="./static/data/images/logo_black.png">
+        <meta property="og:url" content="https://theekingza.github.io/Fitilious_Co/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:alt" content="Fitlicious Co.">
+    <!-- menu Css -->
+    <link rel="stylesheet" href="./static/css/menu.css">
+       <!-- Root Css -->
+    <link rel="stylesheet" href="./static/css/root.css">
+    <link rel="stylesheet" href="./static/css/menu.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Fitlicious Co. - Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <nav>
+            <a href="./home.html">Home</a>
+        </nav>
+    </header>
+
+    <main id="menu-container">
+        <p>Loading menu items...</p>
+    </main>
+
+    <footer>
+        <div class="logo-display"></div>
+        <div>
+            <!-- Address -->
+            <div class="footer-address">
+                <span class="material-symbols-outlined">
+                    location_on
+                    </span><p>1856 Koloane street,<br> Tumahole,<br> Parys</p>
+                <br>
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <p>(016) 932 0190</p>
+            </div>
+        </div>
+        <!-- Information Links -->
+        <div class="info-links">
+            <ul class="info-links-list">
+                <a href="">
+                    <li><button class="footer-btn-link">
+                        Menu
+                    </button>
+                </li>
+                </a>
+                <a href="">
+                    <li><button class="footer-btn-link">
+                        Terms
+                    </button>
+                </li>
+                </a>
+                <a href="">
+                    <li><button class="footer-btn-link">
+                        Privacy
+                    </button>
+                </li>
+                </a>
+                <a href="">
+                    <li><button class="footer-btn-link">
+                        Advertising
+                    </button>
+                </li>
+                </a>
+                <a href="">
+                    <li><button class="footer-btn-link">
+                        About
+                    </button>
+                </li>
+                </a>
+                <a href="">
+                    <li><button class="footer-btn-link">
+                        FAQs
+                    </button>
+                </li>
+                </a>
+            </ul>
+        </div>
+        <div class="footer-elements">
+            <div class="socials">
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="Youtube"></a>
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook_page"></a>
+                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="whatsapp_Channel"></a>
+                <a href="https://www.tiktok.com/@fitlicious.co"><img class="footer-socials" src="./static/data/images/Socials/tiktok.png" alt="Tiktok"></a>
+            </div>
+            <div class="reservedrights">
+                <p>FITlicious Co. © <span id="current-year"></span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Fetch and display menu items
+        async function fetchMenu() {
+            const menuContainer = document.getElementById('menu-container');
+            try {
+                const response = await fetch('./static/data/menu.json'); // Path to your JSON file
+                const menuData = await response.json();
+
+                // Clear the loading message
+                menuContainer.innerHTML = '';
+
+                // Check if the menu is empty
+                if (menuData.length === 0) {
+                    menuContainer.innerHTML = '<p>The menu list is empty. Please check back later!</p>';
+                    return;
+                }
+
+                // Loop through and display each menu item
+                menuData.forEach(item => {
+                    const menuItem = document.createElement('div');
+                    menuItem.className = 'menu-item';
+
+                    menuItem.innerHTML = `
+                        <img src="${item.image}" alt="${item.item_name}" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h2>${item.item_name}</h2>
+                            <p><strong>Price:</strong> R${item.price.toFixed(2)}</p>
+                            <p><strong>Ingredients:</strong> ${item.ingredients.join(', ')}</p>
+                        </div>
+                    `;
+
+                    menuContainer.appendChild(menuItem);
+                });
+            } catch (error) {
+                menuContainer.innerHTML = `<p>Failed to load menu items. Please try again later.</p>`;
+                console.error('Error fetching menu data:', error);
+            }
+        }
+
+        fetchMenu();
+    </script>
+</body>
+</html>

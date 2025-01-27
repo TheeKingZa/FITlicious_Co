@@ -1,0 +1,23 @@
+[
+    {
+        "item_id": 1,
+        "item_name": "FULL CHICKEN & CHIPS",
+        "price": 150.00,
+        "ingredients": ["Chicken", "Chips"],
+        "image": "./static/data/images/menu_imgs/full_chicken.png"
+    },
+    {
+        "item_id": 2,
+        "item_name": "BRAAI MEAT",
+        "price": 50.00,
+        "ingredients": ["Wors", "Beef or Pork 220g", "1/4 Chicken", "1/4 Chicken & Wors"],
+        "image": "./static/data/images/menu_imgs/Braai_meat.png"
+    },
+    {
+        "item_id": 3,
+        "item_name": "COOKED MEAL",
+        "price": 250.00,
+        "ingredients": ["Skopo(Half)", "Beef Stew", "Chicken Stew", "Mogodu", "Pork Trotters(Thlakwana)"],
+        "image": "./static/data/images/menu_imgs/cooked_meal.png"
+    }
+]
