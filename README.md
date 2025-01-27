@@ -94,6 +94,6 @@ Created by [`Pule Mathikha`](https://github.com/theekingza) as a passion project
 
 ## Website Demo
 
-Check out the live site: [Fitlicious Co. Web Demo](https://theekingza.github.io/Fitilious_Co/index.html)
+Check out the live site: [Fitlicious Co. Web Demo](https://theekingza.github.io/FITlicious_Co/index.html)
 
 ===
