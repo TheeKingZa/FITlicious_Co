@@ -54,12 +54,6 @@
             <ul class="info-links-list">
                 <a href="">
                     <li><button class="footer-btn-link">
-                        Menu
-                    </button>
-                </li>
-                </a>
-                <a href="">
-                    <li><button class="footer-btn-link">
                         Terms
                     </button>
                 </li>
@@ -131,8 +125,8 @@
                         <img src="${item.image}" alt="${item.item_name}" class="menu-item-image">
                         <div class="menu-item-details">
                             <h2>${item.item_name}</h2>
-                            <p><strong>Price:</strong> R${item.price.toFixed(2)}</p>
-                            <p><strong>Ingredients:</strong> ${item.ingredients.join(', ')}</p>
+                            <p class="price"><strong>Price:</strong> R${item.price.toFixed(2)}</p>
+                            <p class="ingredients"><strong>Ingredients:</strong> ${item.ingredients.join(', ')}</p>
                         </div>
                     `;
 

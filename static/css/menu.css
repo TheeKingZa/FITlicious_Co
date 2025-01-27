@@ -1,11 +1,12 @@
 #menu-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
 }
 .menu-item {
-    border: 1px solid #ddd;
+    border: 1px solid var(--clr-2nd);
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -16,7 +17,25 @@
     object-fit:contain;
 }
 .menu-item-details {
-    border: 3px solid lime;
+    background-color: var(--clr-3rd);
     padding: 10px;
+    text-align: left;
 }
 
+@media (width < 300px) {
+    .menu-item-details {
+        text-align: center;
+    }
+    
+}
+
+/* .menu-item-details h2 {
+}
+
+.menu-item-details .price {
+    text-align: left;
+}
+
+.menu-item-details .ingredients {
+    text-align: left;
+} */
