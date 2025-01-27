@@ -1,6 +1,6 @@
 # Fitlicious Co.
 
-Fitlicious Co. is a food-focused website showcasing our delicious offerings, including the famous South African **Kota (Bunny Chow)**, hearty **Loaded Sandwiches**, and other healthy, wholesome meals. Our goal is to make food fun, accessible, and mouth-wateringly good!
+Fitlicious Co. is a food-focused website showcasing our delicious offerings, including the famous South African **Cooked Meals**, hearty **Full Chickenes**, and other healthy, wholesome meals. Our goal is to make food fun, accessible, and mouth-wateringly good!
 
 ---
 
@@ -29,7 +29,7 @@ we’ve got something for everyone, every dish is crafted with love and passion 
 ## Key Features
 
 - **Beautiful Design**: A clean and responsive design that works on all devices.
-- **Delicious Menu**: Grills & Chips, Traditional Food Platter, Platters, Cooked Meals and Braai Meat and a variety of healthy meals.
+- **Delicious Menu**: Grills & Chips, Traditional Food Platter, Platters, Cooked Meals and Braai Meat and a variety of Food Platters.
 - **Interactive Call-to-Actions**: Buttons like "Join Us!" and "View Full Menu" encourage user engagement.
 - **SEO Optimized**: Improved search rankings to ensure customers can find us easily.
 - **Social Media Integration**: Links to YouTube, Facebook, WhatsApp, and X (Twitter) for better outreach.
@@ -38,9 +38,10 @@ we’ve got something for everyone, every dish is crafted with love and passion 
 
 ## Menu Highlights
 
-- **Kota (Bunny Chow)**: A South African classic, featuring a hollowed loaf of bread filled with flavorful curries (chicken, beef, lamb, or vegetarian).
-- **Loaded Sandwich**: Hearty sandwiches packed with your choice of meats, vegetables, or a mix of both.
-- **Healthy Meals**: Smoothie bowls, salads, quinoa bowls, grilled options, and more.
+- **Cooked Meals**: A South African classics, (chicken, beef, lamb, or vegetarian).
+- **Full Chicken**: Grilled Chicken breast, served with a side of rice and vegetables.
+- **Grills & Chips**: Grilled chicken, beef, or lamb served with a side of chips.
+- **Food Platters**: Smoothie bowls, salads, quinoa bowls, grilled options, and more.
 - **Snacks**: Energy bars, fruit platters, and trail mix packs.
 
 ---
@@ -49,13 +50,13 @@ we’ve got something for everyone, every dish is crafted with love and passion 
 
 To ensure Fitlicious Co. ranks well on search engines, we’ve implemented the following:
 
-1. **Keyword Research**: Targeting relevant search terms like "Kota," "Monday Madness," "Healthy Meals," and "Kasi Bites"
+1. **Keyword Research**: Targeting relevant search terms like "Monday Madness," "Food Platters," and "Kasi Bites"
 2. **Meta Descriptions & Tags**: Optimized for each page for better discoverability.
 3. **Backlink Building**: Developing partnerships to improve our domain authority.
 
 ### Benefits of SEO
 - Increases organic traffic to the website.
-- Helps potential customers find us when searching for Kotas, sandwiches, or healthy meals.
+- Helps potential customers find us when searching for Kotas, sandwiches, or Food Platters.
 - Enhances brand visibility.
 
 ---
