@@ -1,267 +1,438 @@
-/* 
- * FITlicioud Co.
- * 
- * Website Design: Styling.
- */
+/* ============================================================
+  Fitlicious Co. — Root / Shared Theme Styles
+  Theme: Gold, Gray, Black, White
+  File: static/css/root.css
 
-/* Reset Defaults */
+  Purpose:
+  - Consistent typography, spacing, and layout across pages
+  - Professional header/footer, buttons, cards, and utilities
+  - Accessible contrast + responsive defaults
+============================================================ */
+
+/* =========================
+  1) Reset + Base
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-/* Root/Application Defauls */
-:root {
-    /* Colors */
-    --clr-b : black;
-    --clr-w : white;
-    /* Application Colors */
-    --clr-main: rgb(62, 62, 62);
-    --clr-2nd: gold;
-    --clr-3rd: rgb(255, 166, 0);
-    /* debugging Colors */
-    --test: lime;
-    --err: red;
-    /* Fonts */
-    --fnt-xs: 0.5rem;
-    --fnt-s: 0.8rem;
-    --fnt-m: 1rem;
-    --fnt-l: 1.5rem;
-    --fnt-xl: 1.8rem;
-    --fnt-xxl: 2rem;
-
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-/* social link thubnails/logos */
-.socials img {
-    width: 30px;
-    height: 30px;
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-/* header */
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Kasi BITES or LiQUOURS */
-.intro-choice {
-    display: flex;
-    flex-direction: column;
-}
-/* Address */
-.address {
-    top: 2%;
-    left: 2%;
-    position: fixed;
-
-    color: var(--clr-3rd);
-
-}
-/* Logo Default position. */
-.logo-head {
-    width: 70px;
-    height: 70px;
-    
-    position: fixed;
-    top: 2%;
-    right: 2%;
-
-    background-image: url("../data/images/logo_black.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-}
-/* logo-display */
-.logo-display {
-    width: 100%;
-    height: 250px;
-
-    background-image: url("../data/images/logo_black.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-
-}
-
-
-/*Navigation */
-nav {
-    margin-top: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    margin: 0px;
-    color: var(--clr-3rd);
-    transition: all 0.5s ease; 
-    border-radius: 5px;
-    /* 
-    border: 2px solid var(--clr-3rd);
-    */
-}
-
-nav a:hover {
-    background-color: var(--clr-3rd);
-    color: var(--clr-b);
-    border: 2px solid var(--clr-w);
-}
-
-/* Body */
 body {
-    min-height: 100vh;
-    display: flex;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Visible, consistent focus (keyboard accessibility) */
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--gold) 70%, white 30%);
+  outline-offset: 3px;
+}
+
+/* =========================
+  2) Design Tokens
+========================= */
+:root {
+  /* Core theme */
+  --black: #0b0b0d;
+  --white: #ffffff;
+
+  /* Grays */
+  --gray-900: #111114;
+  --gray-800: #17171b;
+  --gray-700: #1f1f25;
+  --gray-500: #8b8b95;
+
+  /* Accent (Gold) */
+  --gold: #d4af37;       /* classic gold */
+  --gold-2: #f2c94c;     /* brighter gold for hover */
+
+  /* Semantic */
+  --bg: var(--gray-900);
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-2: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+
+  /* Layout */
+  --container: 1120px;
+  --gutter: 20px;
+
+  /* Effects */
+  --radius: 16px;
+  --shadow: 0 16px 42px rgba(0, 0, 0, 0.55);
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --t-fast: 160ms;
+  --t-med: 240ms;
+}
+
+/* =========================
+  3) Utilities
+========================= */
+.container {
+  width: min(var(--container), calc(100% - (var(--gutter) * 2)));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  letter-spacing: 0.4px;
+}
+
+.section-subtitle {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 12px;
+  z-index: 9999;
+
+  background: var(--white);
+  color: var(--black);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.skip-link:focus {
+  left: 12px;
+}
+
+/* Simple grid helper */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* =========================
+  4) Header / Nav (shared)
+  Used by home.html & menu.html updates
+========================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  background: rgba(17, 17, 20, 0.72);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+}
+
+/* Brand */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: url("../data/images/Logo_gold.png") center / contain no-repeat;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.brand-text {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+/* Nav links */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+
+  transition:
+    background var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease),
+    transform var(--t-fast) var(--ease);
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.nav-link.is-active,
+.nav-link[aria-current="page"] {
+  background: color-mix(in srgb, var(--gold) 18%, transparent);
+  border-color: color-mix(in srgb, var(--gold) 30%, transparent);
+  color: var(--white);
+}
+
+/* Exit link treatment (optional) */
+.nav-link-exit {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+/* Mobile header stacking */
+@media (max-width: 640px) {
+  .header-inner {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    background-color: var(--clr-main);
-
-    /* background-image: var("./static/data/images/logo_black.png"); */
+    align-items: stretch;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .brand {
+    justify-content: center;
+  }
 }
 
-body .footer-elements {
-    display: flex;
+/* =========================
+  5) Buttons (shared)
+========================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+
+  transition:
+    transform var(--t-fast) var(--ease),
+    background var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease);
 }
 
-/* Hyperlinks interaction */
-a {
-    color: var(--clr-3rd);
+.btn-primary {
+  background: var(--gold);
+  color: var(--black);
+  box-shadow: 0 16px 36px rgba(212, 175, 55, 0.18);
 }
 
-a:hover {
-    color: var(--clr-2nd);
-
+.btn-primary:hover {
+  background: var(--gold-2);
+  transform: translateY(-1px);
 }
 
-/* Default Buttons */
-button {
-    padding: 5px;
-    border-radius: 5px;
-    font-size: var(--fnt-s);
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: var(--white);
 }
 
-button:hover {
-    color: var(--clr-b);
-    font-size: var(--fnt-s);
-    font-weight: bold;
-    transition: .25s ease-in-out;
-    background-color: var(--clr-3rd);
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.10);
+  transform: translateY(-1px);
 }
 
-.footer-btn-link {
-    padding: 5px;
-    font-size: var(--fnt-s);
-    background-color: var(--clr-main);
-    border: none;
+/* =========================
+  6) Cards (shared)
+========================= */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
-.footer-btn-link:hover {
-    border-radius: 5px;
-    color: var(--clr-w);
-    font-size: var(--fnt-s);
-    font-weight: bold;
-    background-color: var(--clr-main);
-    transition: .25s ease-in-out;
+/* =========================
+  7) Footer (shared)
+  Used by home.html & menu.html updates
+========================= */
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  background: rgba(17, 17, 20, 0.75);
 }
 
-/* 
- * Footer
- */
-
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-
-    background-color: var(--clr-main);
+.footer-grid {
+  padding: 26px 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  align-items: start;
 }
 
-.footer-elements {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
+.footer-brand .footer-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
-.socials {
-    width: 35%;
-    padding: 3pt;
-    display: flex;
-    justify-content: space-around;
-    
+.logo-display {
+  width: 100%;
+  height: 130px;
+  border-radius: var(--radius);
+  background: url("../data/images/Logo_gold.png") center / contain no-repeat;
+  border: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .footer-address {
-    color: var(--clr-3rd);
-    
+  color: var(--muted);
+  display: grid;
+  gap: 12px;
+}
 
-    display: flex;
-    padding: 5px;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+.footer-address-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
 
+.footer-link {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+}
 
+.footer-link:hover {
+  color: var(--gold-2);
+  text-decoration: underline;
+  text-decoration-color: rgba(212, 175, 55, 0.7);
+}
 
+.footer-links {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-bottom {
+  padding: 14px 0 20px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-socials {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: transform var(--t-fast) var(--ease), filter var(--t-fast) var(--ease), opacity var(--t-fast) var(--ease);
+}
+
+.socials a:hover .footer-socials {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .reservedrights {
-    padding: 9pt;    
-    /* background-color: var(--clr-w); */
-    font-weight: bold;
-}
-/* Information links */
-.info-links {
-    color: black;
-    padding: 5px;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
-.info-links-list a {
-    display: flex;
-    color: black;
-    text-decoration: none;
-    list-style: none;
+/* Footer responsive */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.info-links-list a:hover {
+/* =========================
+  8) Legacy support (for your current index.html)
+  These keep older markup working while you transition.
+========================= */
+
+/* Fixed logo (older pages) */
+.logo-head {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  z-index: 60;
+
+  background: url("../data/images/Logo_gold.png") center / contain no-repeat;
 }
 
-.info-links-list{
-    position: relative;
-    bottom: 0;
-    padding: 2px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* Fixed address block (older pages) */
+.address {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  z-index: 60;
+  color: var(--gold-2);
 }
 
-/* Responsive Design */
-/* Large Screens */
-@media (width < 500px) {
-    body {
-        font-size: var(--fnt-s);
-    }
-    
-
-    nav {
-        font-size: var(--fnt-s);
-    }
-
-    footer {
-        font-size: var(--fnt-xs);
-
-    }
-
-    /* social link thubnails/logos */
-    .socials img {
-        width: 15px;
-        height: 15px;
-    }
+/* Simple link default */
+a {
+  color: var(--gold);
+}
+a:hover {
+  color: var(--gold-2);
 }

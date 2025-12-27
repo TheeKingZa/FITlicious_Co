@@ -1,91 +1,137 @@
-/* Home Page Specific Styles */
+/* ============================================================
+  Fitlicious Co. — Home Page Styles
+  File: static/css/home.css
 
-/* Main Content */
-main {
-    padding: 20px;
-    text-align: center;
-    margin: 5vh 0 10vh 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  Purpose:
+  - Styles used by home.html (Kasi Bites page)
+  - Hero section, menu preview cards, specials, contact card
+============================================================ */
+
+/* =========================
+  Page Hero
+  ========================= */
+  .page-hero {
+  /* Subtle gold glow + dark base */
+  background:
+    radial-gradient(800px 500px at 15% 10%, rgba(212, 175, 55, 0.20), transparent 60%),
+    radial-gradient(700px 500px at 85% 0%, rgba(255, 255, 255, 0.06), transparent 55%),
+    var(--bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
-@media (width < 500px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-}
-
-main section {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: var(--clr-main);
-    color: var(--clr-b);
-    border-top: 6px ridge var(--clr-2nd);
-    border-left: 2px ridge var(--clr-2nd);
-    border-right: 2px ridge var(--clr-2nd);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-main section h2, 
-main section h3 {
-    color: var(--clr-b);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-main section p {
-    color: var(--clr-3rd);
-    margin: 15px 0;
-    line-height: 1.6;
-}
-
-main section ul {
-    list-style-type: disc;
-    padding-left: 40px;
-    text-align: left;
-    margin-top: 15px;
-    color: var(--clr-w);
-}
-
-main section ul li {
-    margin-bottom: 10px;
-}
-
-main a.button {
+.badge {
     display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: var(--clr-main);
-    color: var(--clr-2nd);
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    transition: all .5s ease;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent);
+    background: color-mix(in srgb, var(--gold) 14%, transparent);
+  color: rgba(255, 255, 255, 0.90);
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  font-size: 0.85rem;
 }
 
-main a.button:hover {
-    background-color: var(--clr-3rd);
-    color: var(--clr-b);
-    font-weight: bold;
+
+
+.hero-title {
+  margin-top: 12px;
+  font-size: clamp(2rem, 4.8vw, 3.2rem);
+  letter-spacing: 0.6px;
 }
 
-/* Responsive Design */
-/* Small Screens */
-@media (width < 500px) {
-    header h1 {
-        font-size: 1rem;
-    }
+.hero-subtitle {
+  margin-top: 10px;
+  color: var(--muted);
+  max-width: 70ch;
+}
 
-    main section {
-        padding: 15px;
-    }
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 
-    main section h2, 
-    main section h3 {
-        font-size: 1.5rem;
-    }
+/* =========================
+  Menu preview grid
+========================= */
+.menu-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.menu-card {
+  padding: 16px;
+  background: var(--panel-2);
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+}
+
+.menu-card p {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.section-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+  Specials
+========================= */
+.specials-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.special-card {
+  padding: 16px;
+  background: var(--panel-2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.special-card h3 {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.special-card p {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+/* =========================
+  Contact section card
+========================= */
+.contact-card {
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+  Responsive
+========================= */
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .menu-grid,
+  .specials-grid {
+    grid-template-columns: 1fr;
+  }
 }

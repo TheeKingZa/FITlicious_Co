@@ -1,96 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Prevent Dupicates -->
-    <link rel="canonical" href="https://theekingza.github.io/Fitilious_Co">
-    <!-- SEO optimazation -->
-    <meta name="description" content="Fitlicious Co. offers authentic South African cooked meals, grilled dishes, platters, and daily specials. Taste the vibrant flavors of Kasi bites!">
-    <meta name="keywords" content="Fitlicious Co., South African food, Kasi Bites, Cooked Meals, Full Chicken, Grills & Chips, Braai Meat, Platters, Healthy Food">
-    <meta name="author" content="Pule Mathikha">
-    <meta property="og:title" content="Fitlicious Co. - Authentic South African Meals">
-    <meta property="og:description" content="Explore South Africa's vibrant food culture with Fitlicious Co. From hearty meals to flavorful platters, we bring Kasi flavors to your table.">
-    <meta property="og:image" content="./static/data/images/logo_black.png">
-    <meta property="og:url" content="https://theekingza.github.io/Fitilious_Co/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="Fitlicious Co.">
+  <!-- =========================================================
+    Basic Meta
+  ========================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./static/data/images/logo_black.png" type="image/x-icon">
-    <!-- Css links -->
-    <link rel="stylesheet" href="./static/css/root.css">
-    <link rel="stylesheet" href="./static/css/home.css">
-    <!-- Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <!-- verification for Google -->
-    <meta name="google-site-verification" content="Gh_XDYewYMKpSb44Ibi9fhd1DZCUre6xjSj3Abgn2U0" />
-    <!-- Title -->
-    <title>FITlicious Co. - Home</title>
+  <!-- =========================================================
+    Canonical (prevents duplicate indexing)
+  ========================================================== -->
+  <link rel="canonical" href="https://theekingza.github.io/Fitilious_Co/" />
+
+  <!-- =========================================================
+    SEO + Social Sharing
+  ========================================================== -->
+  <meta name="description" content="Fitlicious Co. offers authentic South African cooked meals, grilled dishes, platters, and daily specials. Taste the vibrant flavors of Kasi bites!" />
+  <meta name="keywords" content="Fitlicious Co., South African food, Kasi Bites, Cooked Meals, Full Chicken, Grills & Chips, Braai Meat, Platters, Healthy Food" />
+  <meta name="author" content="Pule Mathikha" />
+
+  <meta property="og:title" content="Fitlicious Co. - Authentic South African Meals" />
+  <meta property="og:description" content="Explore South Africa's vibrant food culture with Fitlicious Co. From hearty meals to flavorful platters, we bring Kasi flavors to your table." />
+  <meta property="og:image" content="./static/data/images/logo_black.png" />
+  <meta property="og:url" content="https://theekingza.github.io/Fitilious_Co/index.html" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="Fitlicious Co." />
+
+  <!-- =========================================================
+    Favicon
+  ========================================================== -->
+  <link rel="shortcut icon" href="./static/data/images/logo_black.png" type="image/x-icon" />
+
+  <!-- =========================================================
+    Styles
+    Theme colors requested: Gold / Gray / Black / White
+    (implemented in CSS files)
+  ========================================================== -->
+  <link rel="stylesheet" href="./static/css/root.css" />
+  <link rel="stylesheet" href="./static/css/home.css" />
+
+  <!-- =========================================================
+    Icons (Google Material Symbols)
+  ========================================================== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <!-- =========================================================
+    Google Verification
+  ========================================================== -->
+  <meta name="google-site-verification" content="Gh_XDYewYMKpSb44Ibi9fhd1DZCUre6xjSj3Abgn2U0" />
+
+  <title>FITlicious Co. - Home</title>
 </head>
-<body>
-    <!-- Address -->
-    <div class="address">
-        <span class="material-symbols-outlined">
-            location_on
-            </span><p>1856 Koloane street,<br> Tumahole,<br> Parys</p>
+
+<body style="padding: 40px;">
+  <!-- =========================================================
+    Skip Link (Accessibility: keyboard users)
+  ========================================================== -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+    Top Bar: Address + Phone
+  ========================================================== -->
+  <aside class="topbar" aria-label="Business location and phone">
+    <div class="topbar-inner">
+      <div class="topbar-item">
+        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+        <p>
+          1856 Koloane Street,<br />
+          Tumahole,<br />
+          Parys
+        </p>
+      </div>
+
+      <div class="topbar-item">
+        <span class="material-symbols-outlined" aria-hidden="true">call</span>
+        <p>
+          <a class="topbar-link" href="tel:+27169320190">(016) 932 0190</a>
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================
+    Header / Hero
+  ========================================================== -->
+  <header class="hero" role="banner">
+    <div class="container hero-inner">
+      <!-- Logo (can be background-image in CSS or swapped to <img>) -->
+      <div class="brand">
+        <div class="logo-head" role="img" aria-label="Fitlicious Co. logo"></div>
+        <p class="brand-kicker">Authentic South African Meals</p>
+      </div>
+
+      <!-- Main page title -->
+      <h1 class="hero-title">FITlicious Co.</h1>
+
+      <!-- Short intro line (optional, but helps the page feel complete) -->
+      <p class="hero-subtitle">
+        Home-style cooked meals, grills, platters, and daily specials — made with Kasi flavor.
+      </p>
+
+      <!-- =======================================================
+        Primary Choices / Calls-to-Action
+      ======================================================== -->
+      <div class="cta-wrap" aria-label="Choose a section">
+        <!-- Primary CTA -->
+        <a class="cta cta-primary" href="./home.html">
+          <span class="cta-title">KASI BITES</span>
+        </a>
+          <br>
+          <span class="cta-meta">Meals • Grills • Platters</span>
+
+          <br>
+        <!-- Secondary CTA (disabled / coming soon) -->
+        <a class="cta cta-secondary is-disabled" href="#" aria-disabled="true" tabindex="-1">
+          <span class="cta-title">LIQUORS</span>
+        </a>
         <br>
-        <span class="material-symbols-outlined">
-            call
-            </span>
-        <p>(016) 932 0190</p>
+          <span class="cta-meta">Coming soon (in construction)</span>
+      </div>
     </div>
-    <!-- Display Logo -->
-    <div class="logo-head"></div>
+  </header>
 
-    <header>
-        <div>
-            <h1 style="font-size: 50pt;">FITlicious Co.</h1>
-        </div>
-        
-        <div class="intro-choice">
+  <!-- =========================================================
+    Main Content (kept minimal on purpose for a clean landing page)
+  ========================================================== -->
+  <main id="main" class="main">
+    <!-- If you want, we can add: best sellers, opening hours, reviews, etc. -->
+  </main>
 
-            <span>
-                <a href="./home.html" class="button">
-                    <button>
-                    KASI BITES!
-                </button>
-            </a>
-        </span>
+  <!-- =========================================================
+    Footer
+  ========================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <!-- Social links -->
+      <div class="socials" aria-label="Social media links">
+        <a href="#" aria-label="YouTube">
+          <img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100076334163515" aria-label="Facebook">
+          <img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="" />
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="" />
+        </a>
+        <a href="https://www.tiktok.com/@fitlicious.co" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img class="footer-socials" src="./static/data/images/Socials/tiktok.png" alt="" />
+        </a>
+      </div>
 
-        or 
-        <span>
-            <a href="#" class="button">
-            <button>
-                    LIQUORS - Still In Construction
-                </button>
-            </a>
-        </span>
+      <!-- Copyright -->
+      <div class="reservedrights">
+        <p>FITlicious Co. © <span id="year"></span>. All rights reserved.</p>
+      </div>
     </div>
-    </header>
-      
+  </footer>
 
-    <footer>
-    
-        <div class="footer-elements">
-            <div class="socials">
-                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="Youtube"></a>
-                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook_page"></a>
-                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="whatsapp_Channel"></a>
-                <a href="https://www.tiktok.com/@fitlicious.co"><img class="footer-socials" src="./static/data/images/Socials/tiktok.png" alt="Tiktok"></a>
-            </div>
-            <div class="reservedrights">
-                <p>FITlicious Co. © <span id="current-year"></span>. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript Links -->
-    <!-- Inline Script to Update Current Year -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-
-
+  <!-- =========================================================
+    JavaScript: Auto-update year (safe + small)
+  ========================================================== -->
+  <script>
+    // Footer year updater (prevents manual edits every year)
+    (() => {
+      const yearEl = document.getElementById("year");
+      if (!yearEl) return;
+      yearEl.textContent = String(new Date().getFullYear());
+    })();
+  </script>
 </body>
 </html>

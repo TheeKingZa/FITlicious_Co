@@ -1,152 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Prevent Dupicates -->
-    <link rel="canonical" href="https://theekingza.github.io/Fitilious_Co">
-    <!-- SEO optimazation -->
-    <meta name="description" content="Fitlicious Co. offers authentic South African cooked meals, grilled dishes, platters, and daily specials. Taste the vibrant flavors of Kasi bites!">
-    <meta name="keywords" content="Fitlicious Co., South African food, Kasi Bites, Cooked Meals, Full Chicken, Grills & Chips, Braai Meat, Platters, Healthy Food">
-    <meta name="author" content="Pule Mathikha">
-    <meta property="og:title" content="Fitlicious Co. - Authentic South African Meals">
-    <meta property="og:description" content="Explore South Africa's vibrant food culture with Fitlicious Co. From hearty meals to flavorful platters, we bring Kasi flavors to your table.">
-    <meta property="og:image" content="./static/data/images/logo_black.png">
-    <meta property="og:url" content="https://theekingza.github.io/Fitilious_Co/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="Fitlicious Co.">
-    <!-- Favicon -->
-     <link rel="shortcut icon" href="./static/data/images/logo_black.png" type="image/x-icon">
-     <!-- Css links -->
-    <link rel="stylesheet" href="./static/css/root.css">
-    <link rel="stylesheet" href="./static/css/home.css">
-    <!-- Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <!-- Verification on Google -->
-    <meta name="google-site-verification" content="Gh_XDYewYMKpSb44Ibi9fhd1DZCUre6xjSj3Abgn2U0" />
+  <!-- =========================================================
+    Base Meta
+  ========================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>FITlicious Co. - Home</title>
+  <!-- =========================================================
+    Canonical (prevents duplicate indexing)
+  ========================================================== -->
+  <link rel="canonical" href="https://theekingza.github.io/Fitilious_Co/" />
+
+  <!-- =========================================================
+    SEO + Social
+  ========================================================== -->
+  <meta name="description" content="Fitlicious Co. offers authentic South African cooked meals, grilled dishes, platters, and daily specials. Taste the vibrant flavors of Kasi bites!" />
+  <meta name="keywords" content="Fitlicious Co., South African food, Kasi Bites, Cooked Meals, Full Chicken, Grills & Chips, Braai Meat, Platters, Healthy Food" />
+  <meta name="author" content="Pule Mathikha" />
+
+  <meta property="og:title" content="Fitlicious Co. - Authentic South African Meals" />
+  <meta property="og:description" content="Explore South Africa's vibrant food culture with Fitlicious Co. From hearty meals to flavorful platters, we bring Kasi flavors to your table." />
+  <meta property="og:image" content="./static/data/images/logo_black.png" />
+  <meta property="og:url" content="https://theekingza.github.io/Fitilious_Co/home.html" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="Fitlicious Co." />
+
+  <!-- =========================================================
+    Favicon
+  ========================================================== -->
+  <link rel="shortcut icon" href="./static/data/images/Logo_gold.png" type="image/x-icon" />
+
+  <!-- =========================================================
+    CSS
+    Theme: Gold / Gray / Black / White (handled in root.css/home.css)
+  ========================================================== -->
+  <link rel="stylesheet" href="./static/css/root.css" />
+  <link rel="stylesheet" href="./static/css/home.css" />
+
+  <!-- =========================================================
+    Icons
+  ========================================================== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <title>FITlicious Co. | Kasi Bites</title>
+
+  <!-- =========================================================
+    JS (optional to move inline year script out later)
+  ========================================================== -->
 </head>
+
 <body>
-    <div class="logo-head"></div>
-    <!-- <header>
-        <h1>FITlicious Co.</h1>
-    </header> -->
-    <nav>
-        <a style="color: red; font-weight: bold; border-color: red;" href="./index.html">Exit</a>
-        <a href="./menu.html">Menu</a>
-        <a href="#specials">Specials</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
+  <!-- =========================================================
+    Skip Link (Accessibility)
+  ========================================================== -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <section id="intro">
-            <h2>KASI BITES</h2>
-            <p>@FITlicious, we bring the authentic taste of township flavors to your table. From hearty meals to flavorful street food, experience the best bites from Kasi.</p>
-            <a href="#menu" class="button">Explore Our Menu</a>
-        </section>
+  <!-- =========================================================
+    Header / Navigation
+  ========================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand -->
+      <a class="brand" href="./index.html" aria-label="Fitlicious Co. Home">
+        <span class="brand-mark logo-head" aria-hidden="true"></span>
+        <span class="brand-text">FITlicious Co.</span>
+      </a>
 
-        <section id="menu">
-            <h2>Our Menu</h2>
-            <ul>
-                <li>Grills & Chips</li>
-                <li>Traditional Food Platter</li>
-                <li>Platters</li>
-                <li>Cooked Meals</li>
-                <li>Braai Meat</li>
-            </ul>
-            <a href="#" class="button">View Full Menu</a>
-        </section>
+      <!-- Primary nav -->
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link nav-link-exit" href="./index.html">Exit</a>
+        <a class="nav-link" href="./menu.html">Menu</a>
+        <a class="nav-link" href="#specials">Specials</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <section id="specials">
-            <h2>Daily Specials</h2>
-            <p>Don’t miss out on our amazing deals!</p>
-            <ul>
-                <li>Monday Madness: 2 Full Chicken & Chips for the price of 1</li>
-                <li>Weekend Special: Pap, Salad &  Gravy at 20% off</li>
-            </ul>
-        </section>
+  <!-- =========================================================
+    Main Content
+  ========================================================== -->
+  <main id="main">
 
-        <section id="contact">
-            <h3>Contact Us</h3>
-            <p>Got questions or want to place an ORDER or BOOK? <br>We’re just a message away!</p>
-            <a href="mailto:kasibites@fitlicious.com" class="button">Get in Touch</a>
-        </section>
-    </main>
+    <!-- =======================================================
+      Hero / Intro
+    ======================================================== -->
+    <section class="section page-hero" id="intro" aria-label="Kasi Bites introduction">
+      <div class="container">
+        <p class="badge">KASI BITES</p>
+        <h1 class="hero-title">Township flavor, made fresh.</h1>
+        <p class="hero-subtitle">
+          @FITlicious, we bring the authentic taste of township flavors to your table.
+          From hearty meals to flavorful street food, experience the best bites from Kasi.
+        </p>
 
-    <footer>
-        <div class="logo-display"></div>
-        <div>
-            <!-- Address -->
-            <div class="footer-address">
-                <span class="material-symbols-outlined">
-                    location_on
-                    </span><p>1856 Koloane street,<br> Tumahole,<br> Parys</p>
-                <br>
-                <span class="material-symbols-outlined">
-                    call
-                </span>
-                <p>(016) 932 0190</p>
-            </div>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="./menu.html" class="btn btn-ghost">View Full Menu</a>
         </div>
-        <!-- Information Links -->
-        <div class="info-links">
-            <ul class="info-links-list">
-                <a href="./menu.html">
-                    <li><button class="footer-btn-link">
-                        Menu
-                    </button>
-                </li>
-                </a>
-                <a href="">
-                    <li><button class="footer-btn-link">
-                        Terms
-                    </button>
-                </li>
-                </a>
-                <a href="">
-                    <li><button class="footer-btn-link">
-                        Privacy
-                    </button>
-                </li>
-                </a>
-                <a href="">
-                    <li><button class="footer-btn-link">
-                        Advertising
-                    </button>
-                </li>
-                </a>
-                <a href="">
-                    <li><button class="footer-btn-link">
-                        About
-                    </button>
-                </li>
-                </a>
-                <a href="">
-                    <li><button class="footer-btn-link">
-                        FAQs
-                    </button>
-                </li>
-                </a>
-            </ul>
-        </div>
-        <div class="footer-elements">
-            <div class="socials">
-                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="Youtube"></a>
-                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook_page"></a>
-                <a href="#"><img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="whatsapp_Channel"></a>
-                <a href="https://www.tiktok.com/@fitlicious.co"><img class="footer-socials" src="./static/data/images/Socials/tiktok.png" alt="Tiktok"></a>
-            </div>
-            <div class="reservedrights">
-                <p>FITlicious Co. © <span id="current-year"></span>. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JavaScript -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <!-- =======================================================
+      Menu Preview
+    ======================================================== -->
+    <section class="section" id="menu" aria-label="Menu preview">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Our Menu</h2>
+          <br>
+          <p class="section-subtitle">Popular categories you can order from.</p>
+        </header>
+
+        <div class="grid menu-grid" role="list">
+          <article class="card menu-card" role="listitem">
+            <h3>Grills &amp; Chips</h3>
+            <p>Hot, crispy, and filling—perfect for a quick meal.</p>
+          </article>
+
+          <article class="card menu-card" role="listitem">
+            <h3>Traditional Food Platter</h3>
+            <p>Classic comfort food served the Kasi way.</p>
+          </article>
+
+          <article class="card menu-card" role="listitem">
+            <h3>Platters</h3>
+            <p>Great for sharing—family, friends, and gatherings.</p>
+          </article>
+
+          <article class="card menu-card" role="listitem">
+            <h3>Cooked Meals</h3>
+            <p>Home-style meals made fresh for your day.</p>
+          </article>
+
+          <article class="card menu-card" role="listitem">
+            <h3>Braai Meat</h3>
+            <p>Smoky, tender, and seasoned to perfection.</p>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a href="./menu.html" class="btn btn-primary">Go to Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+      Specials
+    ======================================================== -->
+    <section class="section" id="specials" aria-label="Daily specials">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Daily Specials</h2>
+          <p class="section-subtitle">Don’t miss out on our deals.</p>
+        </header>
+
+        <div class="grid specials-grid" role="list">
+          <article class="card special-card" role="listitem">
+            <h3>Monday Madness</h3>
+            <p>2 Full Chicken &amp; Chips for the price of 1</p>
+          </article>
+
+          <article class="card special-card" role="listitem">
+            <h3>Weekend Special</h3>
+            <p>Pap, Salad &amp; Gravy at 20% off</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+      Contact CTA
+    ======================================================== -->
+    <section class="section" id="contact" aria-label="Contact section">
+      <div class="container">
+        <div class="card contact-card">
+          <div>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">
+              Got questions or want to place an order / booking?
+              We’re just a message away.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:kasibites@fitlicious.com">Email Us</a>
+            <a class="btn btn-ghost" href="tel:+27169320190">Call (016) 932 0190</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+    Footer
+  ========================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <!-- Logo / brand -->
+      <div class="footer-brand">
+        <div class="logo-display" aria-hidden="true"></div>
+        <p class="footer-note">Authentic South African meals • Kasi Bites</p>
+      </div>
+
+      <!-- Address -->
+      <div class="footer-address" aria-label="Business address and phone">
+        <div class="footer-address-row">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          <p>1856 Koloane Street,<br />Tumahole,<br />Parys</p>
+        </div>
+
+        <div class="footer-address-row">
+          <span class="material-symbols-outlined" aria-hidden="true">call</span>
+          <p><a class="footer-link" href="tel:+27169320190">(016) 932 0190</a></p>
+        </div>
+      </div>
+
+      <!-- Info links -->
+      <nav class="footer-links" aria-label="Footer links">
+        <a class="footer-link" href="./menu.html">Menu</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Advertising</a>
+        <a class="footer-link" href="#">About</a>
+        <a class="footer-link" href="#">FAQs</a>
+      </nav>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="container footer-bottom">
+      <div class="socials" aria-label="Social media links">
+        <a href="#" aria-label="YouTube">
+          <img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="" />
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="" />
+        </a>
+        <a href="https://www.tiktok.com/@fitlicious.co" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img class="footer-socials" src="./static/data/images/Socials/tiktok.png" alt="" />
+        </a>
+      </div>
+
+      <p class="reservedrights">
+        FITlicious Co. © <span id="year"></span>. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+    JavaScript: Auto-update year
+  ========================================================== -->
+  <script>
+    // Footer year updater (keeps copyright year current)
+    (() => {
+      const yearEl = document.getElementById("year");
+      if (!yearEl) return;
+      yearEl.textContent = String(new Date().getFullYear());
+    })();
+  </script>
 </body>
 </html>
