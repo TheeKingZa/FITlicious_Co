@@ -22,6 +22,7 @@
 
   <link rel="stylesheet" href="./static/css/root.css" />
   <link rel="stylesheet" href="./static/css/home.css" />
+  <link rel="stylesheet" href="./static/css/imgs.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
   <title>THEBACKYARD • Home</title>
@@ -66,7 +67,7 @@
       </div>
     </section>
 
-    <!-- Menu Preview (populated from CSV categories) -->
+    <!-- Menu Preview -->
     <section class="section" id="menu">
       <div class="container">
         <header class="section-header">
@@ -75,47 +76,59 @@
         </header>
 
         <div class="grid menu-grid" role="list">
-          <!-- Populated dynamically from CSV categories -->
           <article class="card menu-card" role="listitem">
+            <img src="./static/data/images/Fx_Snaps/1.jpeg" alt="Grills & Chips" class="menu-img">
             <h3>Grills &amp; Chips</h3>
             <p>Hot, crispy full chickens, wings, ribs, and more with chips.</p>
           </article>
 
+
+
+
+
           <article class="card menu-card" role="listitem">
             <h3>Platters</h3>
+            <img src="./static/data/images/Fx_Snaps/64.png" alt="Platters" class="menu-img">
             <p>Generous sharing platters with beef, pork, wings, wors &amp; ribs.</p>
           </article>
 
           <article class="card menu-card" role="listitem">
+            <img src="./static/data/images/Fx_Snaps/4.jpg" alt="Traditional Platters" class="menu-img">
             <h3>Traditional Platters</h3>
             <p>Classic township favorites: Skopo, Mogodu, Trotters, Pap &amp; Salad.</p>
           </article>
 
           <article class="card menu-card" role="listitem">
-            <h3>Braai Meat</h3>
-            <p>Smoky braai meat served with Pap, Salad &amp; Gravy.</p>
-          </article>
+        <img src="./static/data/images/Fx_Snaps/7.jpg" alt="Braai Meat" class="menu-img">
+        <h3>Braai Meat</h3>
+        <p>Smoky braai meat served with Pap, Salad &amp; Gravy.</p>
+      </article>
 
-          <article class="card menu-card" role="listitem">
-            <h3>Cooked Meals</h3>
-            <p>Home-style stews, Skopo, Mogodu, and Trotters with Pap.</p>
-          </article>
+      <article class="card menu-card" role="listitem">
+        <img src="./static/data/images/Fx_Snaps/8.jpg" alt="Cooked Meals" class="menu-img">
+        <h3>Cooked Meals</h3>
+        <p>Home-style stews, Skopo, Mogodu, and Trotters with Pap.</p>
+      </article>
 
-          <article class="card menu-card" role="listitem">
-            <h3>Kotas</h3>
-            <p>Iconic Kasi sandwiches loaded with flavour — from Slay Queen to Quantum.</p>
-          </article>
+      <article class="card menu-card" role="listitem">
+        <img src="./static/data/images/Fx_Snaps/62.png
+        " alt="Kotas" class="menu-img">
+        <h3>Kotas</h3>
+        <p>Iconic Kasi sandwiches loaded with flavour — from Slay Queen to Quantum.</p>
+      </article>
 
-          <article class="card menu-card" role="listitem">
-            <h3>Chips</h3>
-            <p>Freshly fried chips in Small, Medium, and Large sizes.</p>
-          </article>
+      <article class="card menu-card" role="listitem">
+        <img src="./static/data/images/Fx_Snaps/63.png" alt="Chips" class="menu-img">
+        <h3>Chips</h3>
+        <p>Freshly fried chips in Small, Medium, and Large sizes.</p>
+      </article>
 
-          <article class="card menu-card" role="listitem">
-            <h3>Extras</h3>
-            <p>Add-ons: meat cuts, wors, salad, gravy, cheese, egg, and more.</p>
-          </article>
-        </div>
+      <article class="card menu-card" role="listitem">
+        <img src="./static/data/images/Fx_Snaps/61.png" alt="Extras" class="menu-img">
+        <h3>Extras</h3>
+        <p>Add-ons: meat cuts, wors, salad, gravy, cheese, egg, and more.</p>
+      </article>
+    </div>
 
         <div class="section-actions">
           <a href="./menu.html" class="btn btn-primary">Go to Full Menu</a>
@@ -123,7 +136,7 @@
       </div>
     </section>
 
-    <!-- Specials -->
+    <!-- Specials Section with Image -->
     <section class="section" id="specials">
       <div class="container">
         <header class="section-header">
@@ -133,13 +146,18 @@
 
         <div class="grid specials-grid" role="list">
           <article class="card special-card" role="listitem">
+            <img src="./static/data/images/menu_imgs/mogodu.jpeg" alt="Mogodu Plate" class="special-img">
             <h3>MOGODU MONDAY</h3>
-            <p>MOGODU PLATE + MAINSTAY CAN </p>
+            <p>MOGODU PLATE + MAINSTAY CAN</p>
             <span style="color: var(--gold);">R 60</span>
           </article>
+
           <article class="card special-card" role="listitem">
-            <h3>Weekend Special</h3>
-            <p>Pap, Salad &amp; Gravy at 20% off</p>
+            <img src="./static/data/images/menu_imgs/Lotto.jpeg" alt="Weekend Special" class="special-img">
+            <h3>The National Lottery</h3>
+            <p>Now Available</p>
+            <span style="color: var(--red);">Not For Persons Under 18</span>
+
           </article>
         </div>
       </div>
@@ -159,71 +177,59 @@
 
           <div class="contact-actions">
             <a class="btn btn-primary" href="mailto:thebackyard.parys@gmail.com">Email Us</a>
-
-
             <a class="btn btn-ghost" href="tel:+27665522423">Call</a>
           </div>
         </div>
       </div>
-        </section>
-      </main>
+    </section>
 
-      <!-- Footer -->
-      <footer class="site-footer" role="contentinfo">
-        <div class="container footer-grid">
-          <div class="footer-brand">
-            <div class="logo-display" aria-hidden="true"></div>
+  </main>
 
-            <!-- Logo -->
-                    <img src="./static/data/images/Logos/THEBACKYARD_Logo_Text_goldish.png" alt="">
-          </div>
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-display" aria-hidden="true"></div>
+        <img src="./static/data/images/Logos/THEBACKYARD_Logo_Text_goldish.png" alt="THEBACKYARD Logo">
+      </div>
 
-          <div class="footer-address">
-            <div class="footer-address-row">
-              <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
-              <p>1856 Koloane Street,<br />Tumahole,<br />Parys</p>
-            </div>
-            <div class="footer-address-row">
-              
-            </div>
-          </div>
+      <div class="footer-address">
+        <div class="footer-address-row">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          <p>1856 Koloane Street,<br />Tumahole,<br />Parys</p>
+        </div>
+      </div>
 
-             <nav class="nav" aria-label="Footer links">
+      <nav class="nav" aria-label="Footer links">
         <a class="nav-link nav-link-exit" href="./index.html">Exit</a>
-        (
-          <a class="nav-link" href="./terms.html">Terms</a>
-              &amp;
-          <a class="nav-link" href="./privacyPolicy.html">Privacy</a>
-        )
+        <a class="nav-link" href="./terms.html">Terms</a>
+        <a class="nav-link" href="./privacyPolicy.html">Privacy</a>
         <a class="nav-link" href="./advertising.html">Advertising</a>
         <a class="nav-link" href="./aboutUs.html">About Us</a>
       </nav>
-    
-        </div>
+    </div>
 
-        <div class="container footer-bottom">
-          <div class="socials" aria-label="Social media links">
-            <a href="https://www.facebook.com/profile.php?id=100076334163515" aria-label="Facebook">
-              <img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://whatsapp.com/channel/0029Vb7c4G1L2AU5OYbZYY28" aria-label="WhatsApp">
+    <div class="container footer-bottom">
+      <div class="socials" aria-label="Social media links">
+        <a href="https://www.facebook.com/profile.php?id=100076334163515" aria-label="Facebook">
+          <img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://whatsapp.com/channel/0029Vb7c4G1L2AU5OYbZYY28" aria-label="WhatsApp">
           <img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="WhatsApp" />
         </a>
-            </a>
-          </div>
+      </div>
 
-          <p class="reservedrights">
-            THEBACKYARD © <span id="year"></span>. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <p class="reservedrights">
+        THEBACKYARD © <span id="year"></span>. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
-      <script>
-        // Auto-update year
-        (() => {
-          const yearEl = document.getElementById("year");
-          if (yearEl) yearEl.textContent = new Date().getFullYear();
-        })();
-      </script>
-    </body>
-  </html>
+  <script>
+    (() => {
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
