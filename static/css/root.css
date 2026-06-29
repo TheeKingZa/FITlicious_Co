@@ -141,7 +141,7 @@ body {
 .logo-head {
   width: 70px;
   height: 70px;
-  background: url("../data/images/Logo_gold.png") center / contain no-repeat;
+  background: url("../data/images/Logos/TBY_logo_goldish.png") center / contain no-repeat;
   border: 1px solid var(--border);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   border-radius: 12px;
@@ -319,4 +319,8 @@ a:hover {
 
 .footer-note {
   color: var(--gold-2);
+}
+
+.aside {
+  padding: 2rem;
 }
