@@ -1,211 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- =========================================================
-    Base Meta
-  ========================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- =========================================================
-    Canonical + SEO
-  ========================================================== -->
   <link rel="canonical" href="https://theekingza.github.io/Fitilious_Co/menu.html" />
 
-  <meta name="description" content="Browse the Fitlicious Co. menu — authentic Kasi meals, grills, platters, and daily specials." />
-  <meta name="keywords" content="Fitlicious Co., menu, Kasi Bites, South African food, cooked meals, platters, grills" />
+  <meta name="description" content="Full menu of THEBACKYARD – authentic South African Kasi food including Grills & Chips, Platters, Kotas, Braai Meat, Cooked Meals and more." />
+  <meta name="keywords" content="THEBACKYARD menu, Kasi food, Grills & Chips, Platters, Kotas, Braai Meat, Cooked Meals" />
   <meta name="author" content="Pule Mathikha" />
 
-  <meta property="og:title" content="Fitlicious Co. - Menu" />
-  <meta property="og:description" content="Browse the Fitlicious Co. menu — authentic Kasi meals, grills, platters, and daily specials." />
+  <meta property="og:title" content="THEBACKYARD - Full Menu" />
+  <meta property="og:description" content="Explore our full menu of authentic South African Kasi meals and platters." />
   <meta property="og:image" content="./static/data/images/logo_black.png" />
   <meta property="og:url" content="https://theekingza.github.io/Fitilious_Co/menu.html" />
 
-  <!-- =========================================================
-    Favicon
-  ========================================================== -->
-  <link rel="icon" href="./static/data/images/logo_black.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="THEBACKYARD Menu" />
 
-  <!-- =========================================================
-    CSS
-    Theme: Gold / Gray / Black / White
-    - root.css: shared system (layout, buttons, footer)
-    - menu.css: page-specific layout
-  ========================================================== -->
+  <link rel="shortcut icon" href="./static/data/images/Logo_gold.png" type="image/x-icon" />
+
   <link rel="stylesheet" href="./static/css/root.css" />
-  <link rel="stylesheet" href="./static/css/menu.css" />
-
-  <!-- =========================================================
-    Icons
-  ========================================================== -->
+  <link rel="stylesheet" href="./static/css/home.css" />
+  <link rel="stylesheet" href="./static/css/menu.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
-  <title>FITlicious Co. | Menu</title>
+  <title>THEBACKYARD • Full Menu</title>
+
+
 </head>
 
 <body>
-  <!-- =========================================================
-    Skip Link (Accessibility)
-  ========================================================== -->
+  <!-- Skip Link -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- =========================================================
-    Header / Navigation
-  ========================================================== -->
+  <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Fitlicious Co. Home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">FITlicious Co.</span>
+      <a class="brand" href="./index.html" aria-label="THEBACKYARD Home">
+        <span class="brand-mark logo-head" aria-hidden="true"></span>
+        <img src="./static/data/images/Logos/THEBACKYARD_Logo_Text_w.png" alt="logo" width="250px" height="50px">
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
+         <nav class="nav" aria-label="Footer links">
+        <a class="nav-link nav-link-exit" href="./index.html">Exit</a>
         <a class="nav-link" href="./home.html">Home</a>
-        <a class="nav-link is-active" href="./menu.html" aria-current="page">Menu</a>
+        <p class="nav-link" href="./menu.html">...</p>
+        <a class="nav-link" href="./terms.html">Terms</a>
+        <a class="nav-link" href="./privacyPolicy.html">Privacy</a>
+        <a class="nav-link" href="./advertising.html">Advertising</a>
+        <a class="nav-link" href="./aboutUs.html">About Us</a>
       </nav>
+    
     </div>
   </header>
 
-  <!-- =========================================================
-    Main Content
-  ========================================================== -->
-  <main id="main" class="section">
-    <div class="container">
-      <header class="section-header">
-        <h1 class="section-title">Our Menu</h1>
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="section page-hero">
+      <div class="container">
+        <p class="badge">Our Full Menu</p>
+        <h1 class="hero-title">THEBACKYARD Menu</h1>
+        <p class="hero-subtitle">
+          Authentic Kasi flavours made fresh. Scroll to explore all categories.
+        </p>
         <br>
-        <p class="section-subtitle">Browse items and prices. Updated from our menu list.</p>
-      </header>
+        <div>
+          <a href="https://1drv.ms/x/c/fa36cf523e767824/IQCVq9XIdx_3SYsq_wjfuScDAZeH1WMJUypqlMvtM3Oi7Z0?e=AgxQJc" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="download-btn">
+    <span class="material-symbols-outlined">download</span>
+    Download Full Menu (Excel)
+  </a>
+        </div>
+      </div>
+    </section>
 
-      <!-- Status message (replaced by JS after load) -->
-      <p id="menu-status" class="menu-status" aria-live="polite">Loading menu items...</p>
-
-      <!-- Menu items injected here -->
-      <section id="menu-container" class="menu-grid" aria-label="Menu items">
-        <!-- JS will render menu cards here -->
-      </section>
-    </div>
+    <!-- Menu Content (populated by JavaScript) -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div id="menu-content">
+          <!-- JavaScript will inject all categories and items here -->
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- =========================================================
-    Footer
-  ========================================================== -->
+  <!-- Fixed Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
-      <!-- Brand -->
       <div class="footer-brand">
         <div class="logo-display" aria-hidden="true"></div>
-        <p class="footer-note" style="color: var(--black);">Kasi Bites</p>
+        <img src="./static/data/images/Logos/THEBACKYARD_Logo_Text_goldish.png" alt="">
+
       </div>
 
-      <!-- Address -->
-      <div class="footer-address" aria-label="Business address and phone">
+      <div class="footer-address">
         <div class="footer-address-row">
           <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
           <p>1856 Koloane Street,<br />Tumahole,<br />Parys</p>
         </div>
 
-        <div class="footer-address-row">
-          <span class="material-symbols-outlined" aria-hidden="true">call</span>
-          <p><a class="footer-link" href="tel:+27169320190">(016) 932 0190</a></p>
-        </div>
       </div>
 
-      <!-- Info links -->
       <nav class="footer-links" aria-label="Footer links">
-        <a class="footer-link" href="#">Terms</a>
-        <a class="footer-link" href="#">Privacy</a>
-        <a class="footer-link" href="#">Advertising</a>
-        <a class="footer-link" href="#">About</a>
-        <a class="footer-link" href="#">FAQs</a>
+        <!-- <a class="footer-link" href="./home.html">Home</a> -->
+        <a class="footer-link" href="./terms.html">Terms</a> &amp;
+        <a class="footer-link" href="./privacyPolicy.html">Privacy</a>
+        <!-- <a class="footer-link" href="#">About</a> -->
+        <!-- <a class="footer-link" href="#">FAQs</a> -->
       </nav>
     </div>
 
     <div class="container footer-bottom">
       <div class="socials" aria-label="Social media links">
-        <!-- <a href="#" aria-label="YouTube"><img class="footer-socials" src="./static/data/images/Socials/youtube.png" alt="" /></a> -->
-        <a href="https://www.facebook.com/profile.php?id=100076334163515" aria-label="Facebook"><img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="" /></a>
-        <!-- <a href="#" aria-label="WhatsApp"><img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="" /></a> -->
-        <a href="https://www.tiktok.com/@fitlicious.co" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-          <img class="footer-socials" src="./static/data/images/Socials/tiktok.png" alt="" />
+        <a href="https://www.facebook.com/profile.php?id=100076334163515" aria-label="Facebook">
+          <img class="footer-socials" src="./static/data/images/Socials/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://whatsapp.com/channel/0029Vb7c4G1L2AU5OYbZYY28" aria-label="WhatsApp">
+          <img class="footer-socials" src="./static/data/images/Socials/whatsapp.png" alt="WhatsApp" />
+        </a>
         </a>
       </div>
 
       <p class="reservedrights">
-        FITlicious Co. © <span id="year"></span>. All rights reserved.
+        THEBACKYARD © <span id="year"></span>. All rights reserved.
       </p>
     </div>
   </footer>
 
-  <!-- =========================================================
-    JavaScript
-    - Updates year
-    - Fetches menu JSON and renders professional cards
-  ========================================================== -->
-  <script>
-    // ----------------------------------------------------------
-    // Footer year updater
-    // ----------------------------------------------------------
-    (() => {
-      const yearEl = document.getElementById("year");
-      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-    })();
-
-    // ----------------------------------------------------------
-    // Menu Renderer (fetch menu.json and render cards)
-    // ----------------------------------------------------------
-    async function fetchMenu() {
-      const menuContainer = document.getElementById("menu-container");
-      const statusEl = document.getElementById("menu-status");
-
-      try {
-        const response = await fetch("./static/data/menu.json", { cache: "no-store" });
-        if (!response.ok) throw new Error("Network response was not ok");
-
-        const menuData = await response.json();
-
-        // Clear status
-        if (statusEl) statusEl.textContent = "";
-
-        // Empty state
-        if (!Array.isArray(menuData) || menuData.length === 0) {
-          if (statusEl) statusEl.textContent = "The menu list is empty. Please check back later!";
-          return;
-        }
-
-        // Render cards
-        menuContainer.innerHTML = "";
-        menuData.forEach((item) => {
-          const card = document.createElement("article");
-          card.className = "menu-card";
-          card.innerHTML = `
-            <div class="menu-card-media">
-              <img
-                src="${item.image}"
-                alt="${item.item_name}"
-                class="menu-item-image"
-                loading="lazy"
-              />
-            </div>
-
-            <div class="menu-card-body">
-              <h2 class="menu-item-title">${item.item_name}</h2>
-              <p class="menu-item-price">R${Number(item.price).toFixed(2)}</p>
-              <p class="menu-item-ingredients">
-                <span>Ingredients:</span> ${Array.isArray(item.ingredients) ? item.ingredients.join(", ") : ""}
-              </p>
-            </div>
-          `;
-
-          menuContainer.appendChild(card);
-        });
-      } catch (error) {
-        console.error("Error fetching menu data:", error);
-        if (statusEl) statusEl.textContent = "Failed to load menu items. Please try again later.";
-      }
-    }
-
-    fetchMenu();
-  </script>
+  <script src="./static/js/menu.js"></script>
 </body>
 </html>

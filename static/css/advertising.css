@@ -1,0 +1,35 @@
+/* ============================================================
+   THEBACKYARD – Advertising & About Us Page Styles
+============================================================ */
+
+.content-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.content-wrapper h2 {
+  margin-top: 48px;
+  color: var(--gold);
+  font-size: 1.45rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 8px;
+}
+
+.content-wrapper p,
+.content-wrapper li {
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.content-wrapper ul {
+  padding-left: 28px;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
