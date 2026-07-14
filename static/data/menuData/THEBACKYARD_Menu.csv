@@ -9,14 +9,14 @@ Grills & Chips,Beef/Pork cut,Chips,R90.00,Image 1
 Grills & Chips,Beef/Pork cut,wors & Chips,R150.00,Image 1
 Grills & Chips,Pork Ribs (300g) ,Chips,R100.00,Image 1
 Platters,Platter 1,"1x Beef/Pork, 4x Wings, 2x Wors, 2x Viennas, 1x 300g Ribs, Chips",R300.00,Image 1
-Platters,Platter 2,"2x Beef/Pork, 8x Wings, 4x Wors, 4x Viennas, 2x 300g Ribs, Chips",R400.00,Image 1
-Platters,Platter 3,"3x Beef/Pork, 12x Wings, 4x Wors, 6x Viennas, 3x 300g Ribs, Chips",R500.00,Image 1
-Traditional Platters,Platter 1,"Skopo, Mogodu, Pork Trotters, Sheep Trotters, Salad, Pap",R300.00,Image 2
-Traditional Platters,Platter 2,"Chicken feet, Livers, Intestines, Gizzards, Salad, Pap",R200.00,Image 2
+Platters,Platter 2,"2x Beef/Pork, 8x Wings, 4x Wors, 4x Viennas, 2x 300g Ribs, Chips",R550.00,Image 1
+Platters,Platter 3,"3x Beef/Pork, 12x Wings, 4x Wors, 6x Viennas, 3x 300g Ribs, Chips",R600.00,Image 1
+Traditional Platters,Platter 1,"Skopo, Mogodu, Pork Trotters, Sheep Trotters, Salad, Pap",R350.00,Image 2
+Traditional Platters,Platter 2,"Chicken feet, Livers, Intestines, Gizzards, Salad, Pap",R250.00,Image 2
 Braai Meat,Beef/Pork & Wors,Pap + 2 Salads + Gravy,R130.00,Image 3
-Braai Meat,1/4 Chicken, Pap + 2 Salads + Gravy,R70.00,Image 3
-Braai Meat,1/4 Chicken & Wors,Pap + 2 Salads + Gravy,R100.00,Image 3
-Cooked Meals,Skopo (half cut),Pap + 2 Salads + Gravy,R120.00,Image 3
+Braai Meat,1/4 Chicken, Pap + 2 Salads + Gravy,R80.00,Image 3
+Braai Meat,1/4 Chicken & Wors,Pap + 2 Salads + Gravy,R120.00,Image 3
+Cooked Meals,Skopo (half cut),Pap + 2 Salads + Gravy,R150.00,Image 3
 Cooked Meals,Beef Stew,Pap + 2 Salads + Gravy,R80.00,Image 3
 Cooked Meals,Mogodu,Pap + 2 Salads + Gravy,R60.00,Image 3
 Cooked Meals,Pork Trotters (Thlakwana),Pap + 2 Salads + Gravy,R60.00,Image 3
@@ -41,7 +41,7 @@ Extras,Wors,,R30.00,Image 3
 Extras,Fish,,R30.00,Image 3
 Extras,Pap,,R10.00,Image 3
 Extras,Salad,,R10.00,Image 3
-Extras,Gravy,,R10.00,Image 3
+Extras,Gravy,Tomato,R10.00,Image 3
 Extras,Regular Russian,,R15.00,Image 4
 Extras,Pork Russian,,R20.00,Image 4
 Extras,Cheese Slice,,R5.00,Image 4
